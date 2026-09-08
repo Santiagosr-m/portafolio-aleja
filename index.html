@@ -176,6 +176,13 @@
 
   <section id="pane" style="flex:1; overflow:auto; scroll-behavior:smooth;">
 
+  <sc-if value="{{ lbOpen }}" hint-placeholder-val="{{ false }}">
+    <div onClick="{{ lbClose }}" role="dialog" aria-modal="true" style="position:fixed; inset:0; z-index:60; background:rgba(20,13,9,.92); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; padding:clamp(16px,3vw,48px); animation:fadeIn .28s var(--ease-out) both; cursor:zoom-out;">
+      <img src="{{ lbSrc }}" alt="{{ lbCaption }}" style="max-width:100%; max-height:82vh; width:auto; height:auto; object-fit:contain; border-radius:6px; box-shadow:0 30px 70px -30px rgba(0,0,0,.8); animation:pop .32s var(--ease-out) both;">
+      <p style="font-size:13px; color:#E6DACE; margin:0; text-align:center; max-width:70ch;">{{ lbCaption }}</p>
+      <button type="button" onClick="{{ lbClose }}" aria-label="Cerrar" style="position:absolute; top:clamp(14px,2vw,26px); right:clamp(14px,2vw,26px); width:40px; height:40px; border-radius:50%; border:1px solid rgba(255,255,255,.35); background:transparent; color:#fff; font-size:17px; cursor:pointer; display:flex; align-items:center; justify-content:center;">✕</button>
+    </div>
+  </sc-if>
   <sc-if value="{{ isHome }}" hint-placeholder-val="{{ true }}">
   <div style="animation:fadeIn .35s ease both;">
 
@@ -533,12 +540,12 @@
       <sc-if value="{{ current.hasGallery }}" hint-placeholder-val="{{ false }}">
         <div style="margin-top:clamp(32px,4vw,52px);">
           <p style="font-size:12.5px; letter-spacing:.1em; text-transform:uppercase; color:#A85410; margin:0 0 16px;">{{ t.lblPieces }}</p>
-          <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(min(220px,100%),1fr)); gap:clamp(14px,2vw,24px); max-width:1060px;">
+          <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(300px,100%),1fr)); gap:clamp(14px,2vw,24px); max-width:1060px;">
             <sc-for list="{{ current.gallery }}" as="g" hint-placeholder-count="4">
               <figure data-reveal="" data-lift="" style="margin:0; background:#FEFBF6; border:1px solid rgba(42,27,19,.13); border-radius:8px; padding:14px 14px 0; animation-delay:{{ g.delay }};">
-                <div data-zoom="" style="overflow:hidden; border-radius:4px; background:#EDE7DD; box-shadow:0 10px 24px -18px rgba(42,27,19,.5);">
+                <button type="button" onClick="{{ g.open }}" aria-label="{{ g.caption }}" data-zoom="" style="display:block; width:100%; padding:0; border:0; cursor:zoom-in; overflow:hidden; border-radius:4px; background:#EDE7DD; box-shadow:0 10px 24px -18px rgba(42,27,19,.5);">
                   <img src="{{ g.src }}" alt="{{ g.caption }}" loading="lazy" style="width:100%; height:auto; display:block;">
-                </div>
+                </button>
                 <figcaption style="font-size:12.5px; line-height:1.45; color:#6E5D51; padding:12px 2px 14px; text-wrap:pretty;">{{ g.caption }}</figcaption>
               </figure>
             </sc-for>
@@ -647,7 +654,7 @@ const SECTIONS = [
 ];
 
 class Component extends DCLogic {
-  state = { lang: "es", slug: null, count: 1, active: "", menuOpen: false, othersOpen: false, refIdx: 0 };
+  state = { lang: "es", slug: null, count: 1, active: "", menuOpen: false, othersOpen: false, refIdx: 0, lb: null };
 
   componentDidMount() {
     this.startRefTimer();
@@ -792,7 +799,7 @@ class Component extends DCLogic {
         process: L.process || [],
         metrics: (L.metrics || []).map((m, k) => ({ value: m.value, label: m.label, delay: (k * 0.07).toFixed(2) + "s" })),
         hasGallery: !!(c.gallery && c.gallery.length),
-        gallery: (c.gallery || []).map((g, k) => ({ src: g.src, caption: g[lang], delay: (k * 0.07).toFixed(2) + "s" }))
+        gallery: (c.gallery || []).map((g, k) => ({ src: g.src, caption: g[lang], delay: (k * 0.07).toFixed(2) + "s", open: () => this.setState({ lb: { src: g.src, caption: g[lang] } }) }))
       };
     });
     const idx = list.findIndex(c => c.slug === this.state.slug);
@@ -800,6 +807,10 @@ class Component extends DCLogic {
 
     return {
       t, lang, cvHref,
+      lbOpen: !!this.state.lb,
+      lbSrc: this.state.lb ? this.state.lb.src : "",
+      lbCaption: this.state.lb ? this.state.lb.caption : "",
+      lbClose: () => this.setState({ lb: null }),
       ref: refCur, refIndex: refIdx + 1, refTotal: refs.length, refKey: "ref" + refIdx,
       refPrev: () => { this.restartRefTimer(); this.setState(s => ({ refIdx: (s.refIdx - 1 + refs.length) % refs.length })); },
       refNext: () => { this.restartRefTimer(); this.setState(s => ({ refIdx: (s.refIdx + 1) % refs.length })); },

@@ -58,6 +58,9 @@ window.AG_PORTFOLIO = {
     },
     {
       slug: "comunidad-esri", client: "Esri", year: "2023 – 2025", slot: "case-comunidad", n: "02", img: "assets/proyecto-comunidad-esri-2026.jpg",
+      gallery: [
+        { src: "assets/proyecto-planeta-esri.jpg", es: "Estand de la comunidad en el encuentro presencial", en: "Community stand at the in-person meetup" }
+      ],
       es: {
         title: "+126% de crecimiento en la Comunidad Esri de Colombia y Ecuador",
         summary: "Consolidar la comunidad, hacerla interactuar y conectarla con la ruta de formación de sus miembros.",
@@ -236,7 +239,7 @@ window.AG_PORTFOLIO = {
       }
     },
     {
-      slug: "planeta-esri", client: "Esri", year: "2023 – 2026", slot: "case-planeta", n: "06", img: "assets/proyecto-planeta-esri.jpg",
+      slug: "planeta-esri", client: "Esri", year: "2023 – 2026", slot: "case-planeta", n: "06",
       es: {
         title: "Llevar la marca a las regiones: tecnología que llega al aula",
         summary: "Planeta Esri, un evento para estudiantes y docentes. Ediciones 2023, 2024 y 2025 en seis ciudades.",

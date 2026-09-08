@@ -73,6 +73,23 @@
   @keyframes fadeIn { from { opacity:0; } to { opacity:1; } }
   @keyframes uncover { from { clip-path:inset(0 0 100% 0); } to { clip-path:inset(0 0 0 0); } }
   @keyframes pop { from { opacity:0; transform:translateY(8px) scale(.96); } to { opacity:1; transform:none; } }
+  @keyframes reffill { from { stroke-dashoffset:220; } to { stroke-dashoffset:0; } }
+  @keyframes msgA1 { 0%,1% { opacity:0; transform:translateY(10px); } 5%,92% { opacity:1; transform:none; } 97%,100% { opacity:0; transform:translateY(-6px); } }
+  @keyframes msgA2 { 0%,9% { opacity:0; transform:translateY(10px); } 13%,92% { opacity:1; transform:none; } 97%,100% { opacity:0; transform:translateY(-6px); } }
+  @keyframes msgA3 { 0%,18% { opacity:0; transform:translateY(10px); } 22%,92% { opacity:1; transform:none; } 97%,100% { opacity:0; transform:translateY(-6px); } }
+  @keyframes msgA4 { 0%,26% { opacity:0; transform:translateY(10px); } 30%,92% { opacity:1; transform:none; } 97%,100% { opacity:0; transform:translateY(-6px); } }
+  @keyframes msgB1 { 0%,35% { opacity:0; transform:translateY(10px); } 39%,92% { opacity:1; transform:none; } 97%,100% { opacity:0; transform:translateY(-6px); } }
+  @keyframes msgB2 { 0%,45% { opacity:0; transform:translateY(10px); } 49%,92% { opacity:1; transform:none; } 97%,100% { opacity:0; transform:translateY(-6px); } }
+  @keyframes msgB3 { 0%,53% { opacity:0; transform:translateY(10px); } 57%,92% { opacity:1; transform:none; } 97%,100% { opacity:0; transform:translateY(-6px); } }
+  @keyframes msgB4 { 0%,60% { opacity:0; transform:translateY(6px); } 64%,92% { opacity:1; transform:none; } 97%,100% { opacity:0; } }
+  @keyframes threadA { 0%,14% { transform:translateY(0); } 34% { transform:translateY(calc((clamp(340px,30vw,400px) - 100%) * .45)); } 58%,92% { transform:translateY(calc(clamp(340px,30vw,400px) - 100%)); } 97%,100% { transform:translateY(0); } }
+
+  [data-msg] { animation-duration:17s; animation-timing-function:cubic-bezier(.22,.61,.36,1); animation-iteration-count:infinite; animation-fill-mode:both; }
+  [data-msg="a1"] { animation-name:msgA1; } [data-msg="a2"] { animation-name:msgA2; }
+  [data-msg="a3"] { animation-name:msgA3; } [data-msg="a4"] { animation-name:msgA4; }
+  [data-msg="b1"] { animation-name:msgB1; } [data-msg="b2"] { animation-name:msgB2; }
+  [data-msg="b3"] { animation-name:msgB3; } [data-msg="b4"] { animation-name:msgB4; }
+  [data-thread] { animation:threadA 17s cubic-bezier(.33,.7,.3,1) infinite both; }
   @keyframes typing { 0%,100% { opacity:.35; transform:translateY(0); } 50% { opacity:1; transform:translateY(-2px); } }
   @media (hover:hover) and (pointer:fine) {
     [data-lift] { transition:transform .45s var(--ease-out), border-color .45s var(--ease-out), background-color .45s var(--ease-out); }
@@ -171,6 +188,7 @@
         <svg viewBox="0 0 220 12" preserveAspectRatio="none" style="position:absolute; left:0; right:0; bottom:-8px; width:100%; height:13px; color:#C4661A;" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 8c34-5 72-6 106-4s70 5 108 1"></path></svg>
       </p>
       <h1 style="font-family:Fraunces, Georgia, serif; font-weight:500; font-size:clamp(38px,6vw,88px); line-height:1.02; letter-spacing:-0.032em; margin:0 0 24px; max-width:20ch; text-wrap:pretty; animation:rise .65s var(--ease-out) .04s both;">{{ t.hi }}</h1>
+      <p style="font-family:Fraunces, Georgia, serif; font-weight:500; font-size:clamp(21px,2.5vw,34px); line-height:1.24; letter-spacing:-0.022em; color:#7E3B08; max-width:34ch; margin:0 0 26px; padding-left:clamp(16px,1.6vw,22px); border-left:3px solid #F79139; text-wrap:pretty; animation:rise .65s var(--ease-out) .09s both;">{{ t.heroTail }}</p>
       <p style="font-size:clamp(16px,1.5vw,20px); line-height:1.62; color:#4C3D33; max-width:54ch; margin:0 0 28px; text-wrap:pretty; animation:rise .65s var(--ease-out) .12s both;">{{ t.lede1 }}</p>
       <div style="display:flex; flex-wrap:wrap; gap:11px; animation:rise .65s var(--ease-out) .2s both;">
         <a href="#proyectos" onClick="{{ goWorkSection }}" style="display:inline-flex; align-items:center; gap:10px; font-size:14.5px; background:#2A1B13; color:#F6F1EA; padding:14px 24px; border-radius:999px; transition:background-color .4s var(--ease-out), transform .4s var(--ease-out);" style-hover="background:#C4661A; transform:translateY(-2px);">{{ t.ctaWork }} <span data-arrow="">→</span></a>
@@ -221,17 +239,14 @@
     </div>
 
     <div id="proyectos" style="background:#FBF7F3; color:#2A1B13; padding:clamp(34px,4.6vw,70px) clamp(22px,4vw,60px) clamp(44px,6vw,88px);">
-      <div style="display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:14px; padding-bottom:0; margin-bottom:clamp(22px,3vw,34px);">
+      <div style="margin-bottom:clamp(22px,3vw,34px);">
         <h2 style="font-family:Fraunces, Georgia, serif; font-weight:500; font-size:clamp(30px,3.6vw,48px); letter-spacing:-0.028em; margin:0;">{{ t.workTitle }}</h2>
-        <p style="font-size:13.5px; color:#7E3B08; margin:0; max-width:54ch;">{{ t.workNote }}</p>
       </div>
       <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(min(340px,100%),1fr)); gap:clamp(14px,1.8vw,20px);">
         <sc-for list="{{ cases }}" as="c" hint-placeholder-count="8">
           <a href="{{ c.href }}" onClick="{{ c.open }}" class="ptile" data-reveal="" style="position:relative; display:block; min-height:clamp(330px,32vw,400px); border-radius:8px; overflow:hidden; background:#A85410; color:#fff; animation-delay:{{ c.delay }};">
             <sc-if value="{{ c.hasImg }}" hint-placeholder-val="{{ false }}">
-              <span class="pbg" style="position:absolute; inset:0; display:block;">
-                <img src="{{ c.img }}" alt="" style="width:100%; height:100%; object-fit:cover; object-position:50% 32%; display:block;">
-              </span>
+              <span class="pbg" style="position:absolute; inset:0; display:block; background-image:{{ c.imgCss }}; background-size:cover; background-position:50% 32%;"></span>
             </sc-if>
             <sc-if value="{{ c.isSlot }}" hint-placeholder-val="{{ true }}">
               <span class="pbg" style="position:absolute; inset:0; display:block;">
@@ -240,9 +255,9 @@
             </sc-if>
             <sc-if value="{{ c.isChat }}" hint-placeholder-val="{{ false }}">
               <span class="pbg" style="position:absolute; inset:0; display:block; background:linear-gradient(155deg,#38271D,#241710);"><span style="position:absolute; left:0; right:0; top:0; height:46%; display:flex; flex-direction:column; justify-content:center; gap:7px; padding:0 24px; overflow:hidden;">
-                <span style="align-self:flex-start; max-width:70%; background:rgba(242,235,228,.14); border:1px solid rgba(242,235,228,.2); border-radius:12px 12px 12px 3px; padding:8px 12px; font-size:12px; color:#F7EFE7;">¿A qué hora abren hoy?</span>
-                <span style="align-self:flex-end; max-width:70%; background:#F79139; border-radius:12px 12px 3px 12px; padding:8px 12px; font-size:12px; color:#fff;">Hoy de 11:00 a 20:00</span>
-                <span style="align-self:flex-end; display:flex; gap:4px; background:#F79139; border-radius:999px; padding:8px 11px;">
+                <span style="align-self:flex-end; max-width:76%; background:#7C8720; border-radius:12px 12px 3px 12px; padding:8px 12px; font-size:12px; line-height:1.45; color:#fff;">¡Hola! 👋 Soy Carola</span>
+                <span style="align-self:flex-start; max-width:70%; background:rgba(242,235,228,.14); border:1px solid rgba(242,235,228,.2); border-radius:12px 12px 12px 3px; padding:8px 12px; font-size:12px; color:#F7EFE7;">2</span>
+                <span style="align-self:flex-end; display:flex; gap:4px; background:#7C8720; border-radius:999px; padding:8px 11px;">
                   <span style="width:4px; height:4px; border-radius:50%; background:#fff; animation:typing 1.1s ease-in-out infinite;"></span>
                   <span style="width:4px; height:4px; border-radius:50%; background:#fff; animation:typing 1.1s ease-in-out .15s infinite;"></span>
                   <span style="width:4px; height:4px; border-radius:50%; background:#fff; animation:typing 1.1s ease-in-out .3s infinite;"></span>
@@ -272,6 +287,28 @@
             </span>
           </a>
         </sc-for>
+      </div>
+
+      <div data-reveal="" style="margin-top:clamp(14px,1.8vw,20px);">
+        <button type="button" onClick="{{ toggleOthers }}" aria-expanded="{{ othersExpanded }}" aria-controls="otros-hitos" style="width:100%; font-family:inherit; text-align:left; cursor:pointer; display:flex; flex-wrap:wrap; align-items:center; gap:16px; background:#F3EDE4; color:#2A1B13; border:1px solid rgba(42,27,19,.16); border-radius:8px; padding:clamp(18px,2.2vw,24px) clamp(20px,2.4vw,28px); transition:background-color .35s var(--ease-out), border-color .35s var(--ease-out);" style-hover="background:#EFE7DB; border-color:rgba(168,84,16,.45);">
+          <span style="flex:1 1 260px; min-width:0;">
+            <span style="display:block; font-family:Fraunces, Georgia, serif; font-weight:500; font-size:clamp(21px,2.2vw,28px); line-height:1.15; letter-spacing:-0.024em;">{{ t.otherTitle }}</span>
+            <span style="display:block; font-size:13.5px; color:#7E3B08; margin-top:6px;">{{ t.otherSub }}</span>
+          </span>
+          <span aria-hidden="true" style="flex:none; width:34px; height:34px; border-radius:50%; border:1px solid rgba(42,27,19,.24); display:flex; align-items:center; justify-content:center; font-size:13px; color:#7E3B08; transform:{{ othersChevron }}; transition:transform .38s var(--ease-out);">▾</span>
+        </button>
+        <div id="otros-hitos" style="overflow:hidden; max-height:{{ othersHeight }}; opacity:{{ othersOpacity }}; transition:max-height .45s var(--ease-out), opacity .35s var(--ease-out);">
+          <div style="display:grid; gap:10px; padding-top:10px;">
+            <sc-for list="{{ secondaryCases }}" as="s2" hint-placeholder-count="2">
+              <a href="{{ s2.href }}" onClick="{{ s2.open }}" tabIndex="{{ othersTabIndex }}" style="display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 16px; background:#FEFBF6; border:1px solid rgba(42,27,19,.13); border-radius:7px; padding:16px clamp(18px,2.2vw,26px); transition:border-color .35s var(--ease-out), background-color .35s var(--ease-out);" style-hover="border-color:rgba(168,84,16,.5); background:#F9F2E7;">
+                <span style="flex:1 1 240px; min-width:0; font-family:Fraunces, Georgia, serif; font-weight:500; font-size:clamp(17px,1.7vw,21px); line-height:1.25; letter-spacing:-0.018em; color:#2A1B13; text-wrap:pretty;">{{ s2.title }}</span>
+                <span style="font-size:12.5px; color:#6E5D51;">{{ s2.client }}</span>
+                <span style="font-size:12.5px; color:#A85410;">{{ s2.year }}</span>
+                <span aria-hidden="true" style="font-size:15px; color:#A85410;">→</span>
+              </a>
+            </sc-for>
+          </div>
+        </div>
       </div>
     </div>
 
@@ -372,48 +409,65 @@
     </div>
 
     <sc-if value="{{ current.isChat }}" hint-placeholder-val="{{ false }}">
-      <div style="background:#eae5db; padding:clamp(28px,4vw,58px) clamp(22px,4vw,60px);">
-        <div style="max-width:920px; margin:0 auto; background:#FEFBF6; border:1px solid rgba(42,27,19,.12); border-radius:12px; overflow:hidden;">
-          <div style="display:flex; align-items:center; gap:9px; padding:11px 14px; border-bottom:1px solid rgba(247,145,57,.32); background:#eff0ea;">
-            <span style="display:flex; gap:5px;"><span style="width:9px; height:9px; border-radius:50%; background:#d3ccbd; display:block;"></span><span style="width:9px; height:9px; border-radius:50%; background:#d3ccbd; display:block;"></span><span style="width:9px; height:9px; border-radius:50%; background:#d3ccbd; display:block;"></span></span>
-            <span style="flex:1; font-size:12px; color:#6E5D51; background:#f7f4ec; border:1px solid rgba(42,27,19,.12); border-radius:999px; padding:4px 12px;">salitremagico.com.co</span>
+      <div style="background:#14110E; padding:clamp(28px,4vw,58px) clamp(22px,4vw,60px);">
+        <div style="max-width:920px; margin:0 auto; background:#1B1813; border:1px solid rgba(255,255,255,.1); border-radius:12px; overflow:hidden;">
+          <div style="display:flex; align-items:center; gap:9px; padding:11px 14px; border-bottom:1px solid rgba(184,194,50,.45); background:#232019;">
+            <span style="display:flex; gap:5px;"><span style="width:9px; height:9px; border-radius:50%; background:#4A443A; display:block;"></span><span style="width:9px; height:9px; border-radius:50%; background:#4A443A; display:block;"></span><span style="width:9px; height:9px; border-radius:50%; background:#4A443A; display:block;"></span></span>
+            <span style="flex:1; display:flex; align-items:center; gap:8px; font-size:12px; color:#BDB3A4; background:#2B2720; border:1px solid rgba(255,255,255,.09); border-radius:999px; padding:4px 12px;"><img src="assets/salitre-magico-logo.png" alt="" style="width:15px; height:15px; object-fit:contain; flex:none; display:block;">salitremagico.com.co</span>
           </div>
-          <div data-wire="" style="display:grid; grid-template-columns:repeat(auto-fit,minmax(240px,1fr)); gap:14px; padding:16px 20px 0;">
-            <div>
-              <div style="height:10px; width:52%; background:#e6e1d5; border-radius:4px;"></div>
-              <div style="height:10px; width:74%; background:#ece7db; border-radius:4px; margin-top:8px;"></div>
-              <div data-wire-hide="" style="height:44px; background:#ece7db; border-radius:8px; margin-top:12px;"></div>
+          <div style="position:relative; background-image:url('assets/salitre-parque.jpg'); background-size:cover; background-position:50% 42%;">
+            <div style="position:absolute; inset:0; background:linear-gradient(180deg, rgba(6,10,26,.42), rgba(6,10,26,.12) 32%, rgba(6,10,26,.35));"></div>
+            <div style="position:relative; display:flex; align-items:center; gap:10px; padding:14px clamp(14px,2vw,22px);">
+              <span style="width:30px; height:30px; border-radius:8px; background:#fff; flex:none; display:block; box-shadow:0 2px 8px rgba(6,10,26,.25);"></span>
+              <span style="flex:1;"></span>
+              <span style="display:flex; align-items:center; gap:8px;">
+                <span style="width:58px; height:11px; border-radius:999px; background:rgba(255,255,255,.9); display:block;"></span>
+                <span style="width:44px; height:11px; border-radius:999px; background:rgba(255,255,255,.9); display:block;"></span>
+                <span style="width:66px; height:11px; border-radius:999px; background:rgba(255,255,255,.9); display:block;"></span>
+                <span style="width:86px; height:26px; border-radius:999px; background:#fff; display:block; box-shadow:0 2px 8px rgba(6,10,26,.25);"></span>
+              </span>
             </div>
-            <div data-wire-hide="">
-              <div style="height:44px; background:#ece7db; border-radius:8px;"></div>
-              <div style="height:10px; width:66%; background:#e6e1d5; border-radius:4px; margin-top:12px;"></div>
-            </div>
-          </div>
-          <div style="max-width:430px; margin:16px 20px 20px auto; background:#fff; border:1px solid rgba(42,27,19,.12); border-radius:14px; overflow:hidden;">
-            <div style="display:flex; align-items:center; gap:10px; padding:13px 16px; background:#2A1B13;">
-              <span style="width:28px; height:28px; border-radius:50%; background:#4C372A; color:#F7EFE7; display:flex; align-items:center; justify-content:center; font-size:12px; font-weight:600; flex:none;">C</span>
-              <div>
-                <div style="font-size:13.5px; font-weight:600; color:#fff;">Carola · Asistente de Salitre Mágico</div>
-                <div style="font-size:11.5px; color:#CBB5A3;">En línea · responde al instante</div>
+            <div style="position:relative; display:flex; flex-wrap:wrap; align-items:flex-end; justify-content:flex-end; gap:clamp(18px,2.6vw,36px); padding:clamp(14px,2vw,26px) clamp(18px,2.4vw,28px) 0;">
+            <div style="display:flex; flex-direction:column; align-items:flex-end; gap:12px; flex:1 1 300px; min-width:0; margin-bottom:clamp(14px,2vw,26px);">
+            <div style="width:min(370px,100%); background:#15180E; border:1px solid rgba(255,255,255,.12); border-radius:14px; overflow:hidden; box-shadow:0 26px 54px -28px rgba(0,0,0,.75);">
+              <div style="display:flex; align-items:center; gap:13px; padding:14px 16px; background:#B8C232; box-shadow:inset 0 -1px 0 rgba(26,29,6,.16);">
+                <span style="width:42px; height:42px; border-radius:50%; background:#fff; overflow:hidden; flex:none; display:block; box-shadow:0 0 0 2px rgba(255,255,255,.85), 0 2px 6px rgba(26,29,6,.22);"><img src="assets/carola-avatar.jpeg" alt="Carola" style="width:100%; height:100%; object-fit:cover; object-position:50% 20%; display:block;"></span>
+                <div style="min-width:0;">
+                  <div style="font-weight:600; font-size:16.5px; line-height:1.2; letter-spacing:-0.006em; color:#000;">Carola</div>
+                  <div style="display:flex; align-items:center; gap:6px; font-size:11.5px; letter-spacing:.02em; color:#000; opacity:.72; margin-top:3px;"><span style="width:6px; height:6px; border-radius:50%; background:#1F5B22; display:block; flex:none;"></span>Salitre Mágico · en línea</div>
+                </div>
               </div>
-            </div>
-            <div style="padding:18px 16px; display:flex; flex-direction:column; gap:10px; background:#f3efe6;">
-              <div data-reveal="" style="align-self:flex-start; max-width:80%; background:#fff; border:1px solid rgba(42,27,19,.12); border-radius:14px 14px 14px 4px; padding:10px 13px; font-size:14px; color:#2A1B13;">Hola, ¿a qué hora abren hoy?</div>
-              <div data-reveal="" style="align-self:flex-end; max-width:80%; background:#4C372A; color:#F7EFE7; border-radius:14px 14px 4px 14px; padding:10px 13px; font-size:14px; animation-delay:.1s;">Hoy abrimos de 11:00 a 20:00. ¿Te muestro los precios de entrada?</div>
-              <div data-reveal="" style="align-self:flex-end; display:flex; flex-wrap:wrap; justify-content:flex-end; gap:7px; animation-delay:.2s;">
-                <span style="font-size:12.5px; border:1px solid rgba(42,27,19,.28); color:#4C3D33; border-radius:999px; padding:6px 12px; background:#fff;">Ver precios</span>
-                <span style="font-size:12.5px; border:1px solid rgba(42,27,19,.28); color:#4C3D33; border-radius:999px; padding:6px 12px; background:#fff;">Altura mínima</span>
-                <span style="font-size:12.5px; border:1px solid rgba(42,27,19,.28); color:#4C3D33; border-radius:999px; padding:6px 12px; background:#fff;">Hablar con alguien</span>
+              <div style="height:clamp(340px,30vw,400px); overflow:hidden; background:#11140B;">
+                <div data-thread="" style="padding:16px 14px; display:flex; flex-direction:column; gap:9px; min-width:0;">
+                <div data-msg="a1" style="align-self:flex-end; max-width:88%; background:#7C8720; color:#fff; border-radius:14px 14px 4px 14px; padding:10px 13px; font-size:14px; line-height:1.5;">¡Hola! 👋 Soy Carola. Bienvenido al parque donde la adrenalina se encuentra con la diversión extrema 🎢</div>
+                <div data-msg="a2" style="align-self:flex-end; max-width:88%; background:#7C8720; color:#fff; border-radius:14px 14px 4px 14px; padding:10px 13px; font-size:14px; line-height:1.5;">Al continuar aceptas nuestra política de tratamiento de datos, Ley 1581 de 2012. 🔒</div>
+                <div data-msg="a3" style="align-self:flex-end; max-width:88%; background:#7C8720; color:#fff; border-radius:14px 14px 4px 14px; padding:10px 13px; font-size:14px; line-height:1.5;">¿Con qué te ayudo? Escribe el número:
+                  <span style="display:grid; gap:3px; margin-top:8px; font-size:13.5px;">
+                    <span>1 ⏰ Horarios</span>
+                    <span>2 🎟️ Precios de la diversión</span>
+                    <span>3 ⁉️ Preguntas frecuentes</span>
+                    <span>4 🚧 Atracciones cerradas</span>
+                    <span>5 🛒 Compras web</span>
+                    <span>6 🎠 Fiestas infantiles</span>
+                    <span>7 🎡 Eventos corporativos</span>
+                  </span></div>
+                <div data-msg="a4" style="align-self:flex-start; max-width:88%; background:#282C1D; border:1px solid rgba(255,255,255,.13); border-radius:14px 14px 14px 4px; padding:10px 15px; font-size:14px; line-height:1.5; color:#EFF1E2;">2</div>
+                <div data-msg="b1" style="align-self:flex-end; max-width:88%; background:#7C8720; color:#fff; border-radius:14px 14px 4px 14px; padding:10px 13px; font-size:14px; line-height:1.5;">¡Ojo con esto! 👀 Los miércoles tienes 50% de descuento comprando anticipado en la web, y los fines de semana también hay precios especiales por compra anticipada.
+                  <span style="display:block; margin-top:9px;">¿Qué día quieres venir? Mira los mejores precios en nuestra web 🛒</span>
+                  <span style="display:block; margin-top:9px; font-size:11.5px; opacity:.82;">*Aplican términos y condiciones.</span></div>
+                <div data-msg="b2" style="align-self:flex-end; max-width:88%; background:#7C8720; color:#fff; border-radius:14px 14px 4px 14px; padding:10px 13px; font-size:14px; line-height:1.5;">¡Gracias por ser parte del parque de la diversión extrema! Nos vemos pronto 🎡</div>
+                <div data-msg="b3" style="align-self:flex-start; max-width:88%; background:#282C1D; border:1px solid rgba(255,255,255,.13); border-radius:14px 14px 14px 4px; padding:10px 15px; font-size:14px; line-height:1.5; color:#EFF1E2;">Gracias, voy a entrar a la página web 🙌</div>
+                  <div data-msg="b4" style="align-self:flex-end; display:flex; gap:4px; background:#7C8720; border-radius:999px; padding:9px 12px;">
+                    <span style="width:5px; height:5px; border-radius:50%; background:#fff; animation:typing 1.1s ease-in-out infinite;"></span>
+                    <span style="width:5px; height:5px; border-radius:50%; background:#fff; animation:typing 1.1s ease-in-out .15s infinite;"></span>
+                    <span style="width:5px; height:5px; border-radius:50%; background:#fff; animation:typing 1.1s ease-in-out .3s infinite;"></span>
+                  </div>
+                </div>
               </div>
-              <div data-reveal="" style="align-self:flex-start; max-width:80%; background:#fff; border:1px solid rgba(42,27,19,.12); border-radius:14px 14px 14px 4px; padding:10px 13px; font-size:14px; color:#2A1B13; animation-delay:.3s;">¿Y si llueve?</div>
-              <div data-reveal="" style="align-self:flex-end; max-width:80%; background:#4C372A; color:#F7EFE7; border-radius:14px 14px 4px 14px; padding:10px 13px; font-size:14px; animation-delay:.4s;">Las atracciones cubiertas siguen operando. Si se suspende alguna, te avisamos por acá.</div>
-              <div data-reveal="" style="align-self:flex-end; display:flex; gap:4px; background:#4C372A; border-radius:999px; padding:9px 12px; animation-delay:.5s;">
-                <span style="width:5px; height:5px; border-radius:50%; background:#fff; animation:typing 1.1s ease-in-out infinite;"></span>
-                <span style="width:5px; height:5px; border-radius:50%; background:#fff; animation:typing 1.1s ease-in-out .15s infinite;"></span>
-                <span style="width:5px; height:5px; border-radius:50%; background:#fff; animation:typing 1.1s ease-in-out .3s infinite;"></span>
-              </div>
+              <div style="height:4px; background:linear-gradient(90deg, #B8C232, rgba(184,194,50,0));"></div>
             </div>
-            <div style="height:4px; background:linear-gradient(90deg, #FFB86B, rgba(255,184,107,0));"></div>
+            </div>
+            </div>
           </div>
         </div>
         <p style="text-align:center; font-size:12.5px; color:#6E5D51; margin:18px 0 0;">{{ t.chatCaption }}</p>
@@ -426,13 +480,13 @@
             <span style="display:flex; gap:5px;"><span style="width:9px; height:9px; border-radius:50%; background:#d3ccbd; display:block;"></span><span style="width:9px; height:9px; border-radius:50%; background:#d3ccbd; display:block;"></span><span style="width:9px; height:9px; border-radius:50%; background:#d3ccbd; display:block;"></span></span>
             <span style="flex:1; font-size:12px; color:#6E5D51; background:#f7f4ec; border:1px solid rgba(42,27,19,.12); border-radius:999px; padding:4px 12px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{{ current.screenUrl }}</span>
           </div>
-          <img src="{{ current.img }}" alt="" style="width:100%; height:auto; display:block;">
+          <span style="display:block; width:100%; aspect-ratio:705/356; background-image:{{ current.imgCss }}; background-size:cover; background-position:50% 0;"></span>
         </div>
       </div>
     </sc-if>
     <sc-if value="{{ current.heroPhoto }}" hint-placeholder-val="{{ false }}">
       <div style="position:relative; aspect-ratio:16/6; background:#e6e1d7; overflow:hidden; animation:uncover .9s var(--ease-out) .1s both;">
-        <img src="{{ current.img }}" alt="" style="width:100%; height:100%; object-fit:cover; object-position:50% 32%; display:block;">
+        <span style="position:absolute; inset:0; display:block; background-image:{{ current.imgCss }}; background-size:cover; background-position:50% 32%;"></span>
       </div>
     </sc-if>
     <sc-if value="{{ current.isSlot }}" hint-placeholder-val="{{ true }}">
@@ -514,12 +568,15 @@ const COPY = {
     langLabel: "English",
     greeting: "Hola, soy Alejandra.",
     methodKicker: "Cómo trabajo",
-    navWork: "Proyectos", navAbout: "Sobre mí", navPath: "Trayectoria", navEdu: "Formación", navContact: "Contacto",
+    navWork: "Mis proyectos", navRefs: "Referencias", navAbout: "Sobre mí", navPath: "Trayectoria", navEdu: "Formación", navContact: "Contacto",
     badge: "De Colombia hasta Iberoamérica · Abierta a nuevos retos",
-    hi: "Hago que una marca cuente desde su personalidad y enamore desde lo que vende, no que enamore para vender.",
-    lede1: "Soy Alejandra García, estratega de contenido y marca con experiencia en compañías B2B en Latinoamérica. Más de 5 años entre estrategia de contenidos, identidad verbal, campañas integradas, SEO y AEO — del brief a la ejecución y haciendo parte de equipos que cumplen metas.",
+    hi: "Creo que las marcas no se recuerdan por lo que venden, sino por lo que significan.",
+    heroTail: "Mi trabajo es construir esa personalidad y ese propósito con contenido que la gente elige ver, leer y compartir.",
+    lede1: "Estratega de contenido y marca con experiencia en compañías B2B en Latinoamérica. Más de 5 años entre estrategia de contenidos, identidad verbal, campañas integradas, SEO y AEO — del brief a la ejecución y haciendo parte de equipos que cumplen metas.",
     ctaWork: "Ver proyectos", ctaContact: "Escríbeme", ctaCv: "Descargar CV",
-    workTitle: "Proyectos", workNote: "Cada proyecto: reto · rol · proceso · resultado · métricas",
+    workTitle: "Mis proyectos",
+    otherTitle: "Otros hitos", otherSub: "Eventos, podcast y estrategia de contenido",
+    refsTitle: "Lo que dicen quienes han trabajado conmigo",
     seeProcess: "Ver el proceso",
     aboutTitle: "Sobre mí",
     about1: "Trabajo en la intersección entre contenido, marca y negocio: traduzco producto complejo a lenguaje con el que alguien decide.",
@@ -535,7 +592,7 @@ const COPY = {
     phoneLabel: "Teléfono / WhatsApp",
     backLabel: "Volver a proyectos", allWork: "Todos los proyectos", nextLabel: "Siguiente proyecto",
     heroSlotHint: "Imagen principal del proyecto", caseImgHint: "Imagen del proyecto",
-    chatCaption: "Simulación del flujo conversacional · contenido provisional",
+    chatCaption: "Simulación del flujo conversacional · el mismo guion operó en el chat de la web y en WhatsApp",
     lblChallenge: "El reto", lblRole: "Mi rol", lblProcess: "Proceso", lblResult: "Resultado", lblPieces: "Piezas del proyecto",
     method: [
       { title: "Primero el criterio, después la pieza", body: "Cada campaña arranca en un brief con una sola idea y una audiencia definida. Todo debe tener un para qué: el contenido es consecuencia y genera efecto, no punto de partida." },
@@ -547,12 +604,15 @@ const COPY = {
     langLabel: "Español",
     greeting: "Hi, I'm Alejandra.",
     methodKicker: "How I work",
-    navWork: "Projects", navAbout: "About", navPath: "Career", navEdu: "Education", navContact: "Contact",
+    navWork: "My projects", navRefs: "References", navAbout: "About", navPath: "Career", navEdu: "Education", navContact: "Contact",
     badge: "From Colombia to Ibero-America · Open to new roles",
-    hi: "I make a brand speak from its personality and win people over with what it sells, not to sell.",
-    lede1: "I'm Alejandra García, a content and brand strategist with experience in B2B companies across Latin America. 5+ years across content strategy, verbal identity, integrated campaigns, SEO and AEO — from brief to launch, as part of teams that hit their targets.",
+    hi: "I believe brands aren't remembered for what they sell, but for what they mean.",
+    heroTail: "My work is building that personality and purpose through content people actually choose to watch, read and share.",
+    lede1: "A content and brand strategist with experience in B2B companies across Latin America. 5+ years across content strategy, verbal identity, integrated campaigns, SEO and AEO — from brief to launch, as part of teams that hit their targets.",
     ctaWork: "View projects", ctaContact: "Get in touch", ctaCv: "Download CV",
-    workTitle: "Projects", workNote: "Every project: challenge · role · process · result · metrics",
+    workTitle: "My projects",
+    otherTitle: "Other milestones", otherSub: "Events, podcast and content strategy",
+    refsTitle: "What the people I have worked with say",
     seeProcess: "See the process",
     aboutTitle: "About me",
     about1: "I work where content, brand and business meet: I translate complex products into language someone can decide with.",
@@ -568,7 +628,7 @@ const COPY = {
     phoneLabel: "Phone / WhatsApp",
     backLabel: "Back to projects", allWork: "All projects", nextLabel: "Next project",
     heroSlotHint: "Project hero image", caseImgHint: "Project image",
-    chatCaption: "Conversation flow simulation · placeholder content",
+    chatCaption: "Conversation flow simulation · the same script ran on the website chat and on WhatsApp",
     lblChallenge: "The challenge", lblRole: "My role", lblProcess: "Process", lblResult: "Result", lblPieces: "Project assets",
     method: [
       { title: "Criteria first, asset second", body: "Every campaign starts from a brief with one idea and a defined audience. Everything needs a reason why: content is a consequence and creates an effect, not a starting point." },
@@ -587,9 +647,10 @@ const SECTIONS = [
 ];
 
 class Component extends DCLogic {
-  state = { lang: "es", slug: null, count: 1, active: "", menuOpen: false };
+  state = { lang: "es", slug: null, count: 1, active: "", menuOpen: false, othersOpen: false, refIdx: 0 };
 
   componentDidMount() {
+    this.startRefTimer();
     this.syncHash();
     this._onHash = () => this.syncHash();
     window.addEventListener("hashchange", this._onHash);
@@ -602,6 +663,7 @@ class Component extends DCLogic {
   }
   componentDidUpdate() { this.observe(); }
   componentWillUnmount() {
+    clearInterval(this._refTimer);
     window.removeEventListener("hashchange", this._onHash);
     const pane = document.getElementById("pane");
     if (pane && this._onScroll) pane.removeEventListener("scroll", this._onScroll);
@@ -692,17 +754,31 @@ class Component extends DCLogic {
     return m[1] + Math.round(parseInt(m[2], 10) * p) + m[3];
   }
 
+  startRefTimer() {
+    const n = ((window.AG_PORTFOLIO || {}).testimonials || []).length;
+    if (n < 2) return;
+    this._refTimer = setInterval(() => this.setState(s => ({ refIdx: (s.refIdx + 1) % n })), 8000);
+  }
+  restartRefTimer() { clearInterval(this._refTimer); this.startRefTimer(); }
   renderVals() {
     const lang = this.state.lang;
     const t = COPY[lang];
     const cvHref = (this.props.cvUrl || "").trim() || "cv/Alejandra-Garcia-CV.pdf";
 
+    const refs = D.testimonials || [];
+    const refIdx = refs.length ? this.state.refIdx % refs.length : 0;
+    const r = refs[refIdx] || {};
+    const refCur = {
+      name: r.name || "", role: r.role || "", text: r[lang] || "",
+      photoCss: r.photo ? 'url("' + r.photo + '")' : "none",
+      initials: r.photo ? "" : (r.name || "").split(" ").filter(Boolean).slice(0, 2).map(w => w[0]).join("")
+    };
     const list = D.cases.map((c, i) => {
       const L = c[lang] || {};
       return {
-        n: c.n, slug: c.slug, client: c.client, year: c.year,
+        n: c.n, slug: c.slug, client: c.client, year: c.year, secondary: !!c.secondary,
         isChat: c.illo === "chat", isScreen: c.illo === "screen", screenUrl: c.screenUrl || "",
-        img: c.img || "",
+        img: c.img || "", imgCss: c.img ? 'url("' + c.img + '")' : "none",
         hasImg: c.illo !== "chat" && !!c.img,
         heroPhoto: c.illo !== "chat" && c.illo !== "screen" && !!c.img,
         isSlot: c.illo !== "chat" && c.illo !== "screen" && !c.img,
@@ -724,6 +800,9 @@ class Component extends DCLogic {
 
     return {
       t, lang, cvHref,
+      ref: refCur, refIndex: refIdx + 1, refTotal: refs.length, refKey: "ref" + refIdx,
+      refPrev: () => { this.restartRefTimer(); this.setState(s => ({ refIdx: (s.refIdx - 1 + refs.length) % refs.length })); },
+      refNext: () => { this.restartRefTimer(); this.setState(s => ({ refIdx: (s.refIdx + 1) % refs.length })); },
       isHome: idx < 0, isCase: idx >= 0,
       nav: SECTIONS.map(s => ({
         label: t[s.key], href: "#" + s.id, go: this.goSection(s.id),
@@ -731,7 +810,15 @@ class Component extends DCLogic {
         scale: (idx < 0 && active === s.id) || (idx >= 0 && s.id === "proyectos") ? 1 : 0,
         color: (idx < 0 && active === s.id) || (idx >= 0 && s.id === "proyectos") ? "#2A1B13" : "#6E5D51"
       })),
-      cases: list,
+      cases: list.filter(c => !c.secondary),
+      secondaryCases: list.filter(c => c.secondary),
+      othersOpen: this.state.othersOpen,
+      othersExpanded: this.state.othersOpen ? "true" : "false",
+      othersChevron: this.state.othersOpen ? "rotate(180deg)" : "rotate(0deg)",
+      othersHeight: this.state.othersOpen ? "400px" : "0px",
+      othersOpacity: this.state.othersOpen ? 1 : 0,
+      othersTabIndex: this.state.othersOpen ? 0 : -1,
+      toggleOthers: () => this.setState(s => ({ othersOpen: !s.othersOpen })),
       current: idx >= 0 ? list[idx] : (list[0] || {}),
       next: list.length ? list[(Math.max(idx, 0) + 1) % list.length] : {},
       stats: (D.stats[lang] || []).map((s, i) => ({ shown: s.value, label: s.label, delay: (i * 0.07).toFixed(2) + "s" })),

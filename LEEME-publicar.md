@@ -1,7 +1,10 @@
 # Publicar el portafolio en GitHub Pages con tu dominio
 
 ## Archivos de esta carpeta
-- `index.html` — el sitio completo en un solo archivo (fuentes, imágenes y scripts incluidos).
+- `index.html` — la página del portafolio.
+- `support.js`, `portfolio-data.js`, `image-slot.js` — el motor de la página y todo su contenido (proyectos, textos ES/EN). Súbelos junto al `index.html`.
+- `assets/` — la foto de perfil y las imágenes de los proyectos.
+- `favicon.svg` — el ícono del navegador.
 - `robots.txt` — permite la indexación y apunta al sitemap.
 - `sitemap.xml` — mapa del sitio para Google Search Console.
 - `CNAME` — el dominio que va a servir GitHub Pages. **Ábrelo y escribe tu dominio real**, una sola línea, sin `https://` y sin barra final. Ej: `alejandragarcia.co`
@@ -52,11 +55,11 @@ La propagación tarda entre unos minutos y unas horas. Mientras tanto el sitio y
 3. Pon el enlace del portafolio en tu perfil de LinkedIn: es la señal externa más fuerte que tienes hoy.
 
 ## Para actualizar el sitio después
-Sube el `index.html` nuevo al repositorio (**Add file → Upload files**, mismo nombre, *Commit*). GitHub republica en un par de minutos.
+Sube los archivos nuevos al repositorio (**Add file → Upload files**, mismos nombres, *Commit*). GitHub republica en un par de minutos. Si solo cambian textos o proyectos, basta con `portfolio-data.js` e `index.html`.
 
 ## SEO que ya viene incluido
 Título y descripción con las palabras clave del rol · canonical y hreflang · `robots: index, follow, max-image-preview:large` · Open Graph y Twitter Card con imagen para LinkedIn y WhatsApp · datos estructurados JSON-LD tipo `Person` (cargo, ubicación, formación, LinkedIn) · favicon SVG · `lang="es"` · jerarquía H1 → H2 → H3 · texto alternativo en la foto.
 
 ## Lo que falta para que rinda
 - El PDF del CV publicado en `cv/`.
-- Imágenes reales de cada proyecto: los espacios están vacíos y las imágenes con nombre descriptivo también posicionan.
+- Imágenes reales de los proyectos que aún tienen el espacio vacío (Carola, omnicanal, Scala, casos de éxito, podcast).

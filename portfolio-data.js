@@ -1,11 +1,22 @@
 /* Contenido del portafolio de Alejandra García Gómez — ES/EN.
    Se carga como script clásico desde <helmet>; expone window.AG_PORTFOLIO. */
 window.AG_PORTFOLIO = {
+  testimonials: [
+    { name: "Nombre y apellido", role: "Cargo actual, Empresa", photo: "",
+      es: "Ejemplo de longitud: Alejandra entró al equipo cuando la marca hablaba distinto en cada país y no teníamos criterio para decidir qué publicar. Montó el marco de mensajes, ordenó el calendario y se sentó con ventas y con producto hasta que el contenido dejó de ser un favor y pasó a ser parte del plan. Tiene algo poco común: defiende una idea con argumentos y también la suelta cuando la evidencia dice otra cosa. Coordinó diseño, web y agencias sin que se le cayera un entregable y sin perder el tono de la marca en el camino.",
+      en: "Length example: Alejandra joined when the brand sounded different in every country and we had no criteria for deciding what to publish. She built the messaging framework, fixed the calendar and sat down with sales and product until content stopped being a favour and became part of the plan. She has something rare: she defends an idea with arguments and also lets it go when the evidence says otherwise. She coordinated design, web and agencies without dropping a deliverable and without losing the brand's tone along the way." },
+    { name: "Nombre y apellido", role: "Cargo actual, Empresa", photo: "",
+      es: "Ejemplo de longitud media: trabajamos juntas en el evento más grande del año y lo que más recuerdo es la calma. Alejandra tenía claro el para qué de cada pieza, así que las decisiones de última hora se tomaban rápido y sin discusión. El equipo llegó al día del evento sabiendo qué decir y por qué.",
+      en: "Medium-length example: we worked together on the biggest event of the year and what I remember most is the calm. Alejandra was clear on the why behind every asset, so last-minute decisions happened fast and without argument. The team arrived on the day knowing what to say and why." },
+    { name: "Nombre y apellido", role: "Cargo actual, Empresa", photo: "",
+      es: "Ejemplo corto: criterio, oficio y una capacidad enorme para traducir producto técnico a algo que la gente entiende y quiere leer.",
+      en: "Short example: judgment, craft and a real ability to turn technical product into something people understand and want to read." }
+  ],
   cases: [
     {
       slug: "estrategia-omnicanal", client: "Salitre Mágico", year: "2021 – 2022", slot: "case-omnicanal", n: "01",
       es: {
-        title: "De la atención telefónica a una estrategia omnicanal",
+        title: "De la línea telefónica a una estrategia omnicanal",
         summary: "Conectar teléfono, chatbot, redes sociales, correo y punto presencial en una sola experiencia, con medición propia.",
         headline: "NPS sostenido en 80%",
         tags: ["Estrategia omnicanal", "Servicio al cliente", "Liderazgo de área"],
@@ -48,7 +59,7 @@ window.AG_PORTFOLIO = {
     {
       slug: "comunidad-esri", client: "Esri", year: "2023 – 2025", slot: "case-comunidad", n: "02", img: "assets/proyecto-comunidad-esri-2026.jpg",
       es: {
-        title: "La Comunidad Esri de Colombia y Ecuador creció un 126% en 2025",
+        title: "+126% de crecimiento en la Comunidad Esri de Colombia y Ecuador",
         summary: "Consolidar la comunidad, hacerla interactuar y conectarla con la ruta de formación de sus miembros.",
         headline: "1.026 → 3.116 miembros",
         tags: ["Estrategia de comunidad", "Eventos", "Contenido y redes"],
@@ -68,7 +79,7 @@ window.AG_PORTFOLIO = {
         ]
       },
       en: {
-        title: "The Esri community in Colombia and Ecuador grew 126% in 2025",
+        title: "+126% growth in the Esri Community of Colombia and Ecuador",
         summary: "Consolidating the community, getting it to interact, and connecting it to its members' learning path.",
         headline: "1,026 → 3,116 members",
         tags: ["Community strategy", "Events", "Content and social"],
@@ -91,7 +102,7 @@ window.AG_PORTFOLIO = {
     {
       slug: "casos-de-exito", client: "Esri · Lundin Gold, Gobernación de Norte de Santander", year: "2023 – 2026", slot: "case-casos", n: "03",
       es: {
-        title: "Un cliente a través del éxito: más de 15 historias para mover una ciencia y una comunidad",
+        title: "15+ historias de éxito que construyeron marca, confianza y comunidad",
         summary: "Traducir proyectos de analítica geoespacial en historias de negocio para audiencias que no son técnicas.",
         headline: "Dos países, seis historias",
         tags: ["Storytelling", "Audiovisual", "B2B"],
@@ -111,7 +122,7 @@ window.AG_PORTFOLIO = {
         ]
       },
       en: {
-        title: "A client through success: 15+ stories to move a science and a community",
+        title: "15+ success stories that built brand, trust and community",
         summary: "Turning geospatial analytics projects into business stories for non-technical audiences.",
         headline: "Two countries, six stories",
         tags: ["Storytelling", "Video", "B2B"],
@@ -134,7 +145,7 @@ window.AG_PORTFOLIO = {
     {
       slug: "chatbot-carola", client: "Salitre Mágico", year: "2021 – 2022", slot: "case-carola", n: "04", illo: "chat",
       es: {
-        title: "Carola, el primer chatbot de la diversión",
+        title: "Carola: el primer chatbot con personalidad de Salitre Mágico",
         summary: "Diseño del flujo conversacional del primer asistente automático del parque, en web y WhatsApp, para descargar un canal telefónico saturado.",
         headline: "El parque recibía +20 llamadas por hora",
         tags: ["Diseño conversacional", "Automatización", "Experiencia de cliente"],
@@ -154,7 +165,7 @@ window.AG_PORTFOLIO = {
         ]
       },
       en: {
-        title: "Carola, the first chatbot of fun",
+        title: "Carola: Salitre Mágico's first chatbot with a personality",
         summary: "Conversational design for the park's first automated assistant, on web and WhatsApp, to relieve a saturated phone line.",
         headline: "The park took 20+ calls an hour",
         tags: ["Conversation design", "Automation", "Customer experience"],
@@ -184,11 +195,11 @@ window.AG_PORTFOLIO = {
         { src: "assets/caf-infografia-uruguay.png", es: "Infografía de país · Uruguay", en: "Country infographic · Uruguay" }
       ],
       es: {
-        title: "Impulsando el primer Índice Govtech de Iberoamérica",
-        summary: "Contenido ejecutivo, visualizador e infografías del primer índice que midió la preparación de los ecosistemas Govtech de la región.",
+        title: "El primer Índice GovTech de Iberoamérica, contado para que se entienda",
+        summary: "Contenido ejecutivo, visualizador e infografías del primer índice que midió la preparación de los ecosistemas GovTech de la región.",
         headline: "Publicación oficial en dos idiomas",
         tags: ["Contenido ejecutivo", "Visualización de datos", "Sector público"],
-        challenge: "El ecosistema Govtech —gobiernos trabajando con startups, scale-ups y mipymes que usan datos y tecnología para resolver retos públicos— era un tema nuevo y técnico. El índice tenía que servir a dos frentes a la vez: generar conocimiento interno y sostener la estrategia externa con los oficiales de México, Brasil, Argentina y Colombia.",
+        challenge: "El ecosistema GovTech —gobiernos trabajando con startups, scale-ups y mipymes que usan datos y tecnología para resolver retos públicos— era un tema nuevo y técnico. El índice tenía que servir a dos frentes a la vez: generar conocimiento interno y sostener la estrategia externa con los oficiales de México, Brasil, Argentina y Colombia.",
         roleText: "Definí el estilo, el diseño y la organización general del visualizador del índice y de las infografías por país. Generé las infografías del documento oficial para Latinoamérica, España y Portugal en español e inglés, redacté y corregí policy briefs, y preparé materiales para presentaciones ejecutivas y reuniones con alcaldes, presidentes y altos funcionarios.",
         process: [
           { n: "01", title: "Entender el tema", body: "Traducir un ecosistema técnico y nuevo a un lenguaje que un tomador de decisiones público pudiera usar en una reunión." },
@@ -200,15 +211,15 @@ window.AG_PORTFOLIO = {
         metrics: [
           { value: "4", label: "Países en la estrategia externa: México, Brasil, Argentina y Colombia" },
           { value: "2", label: "Idiomas de la publicación oficial: español e inglés" },
-          { value: "1º", label: "Índice Govtech para Latinoamérica, España y Portugal" }
+          { value: "1º", label: "Índice GovTech para Latinoamérica, España y Portugal" }
         ]
       },
       en: {
-        title: "Driving Ibero-America's first Govtech Index",
-        summary: "Executive content, data visualizer and infographics for the first index measuring the readiness of the region's Govtech ecosystems.",
+        title: "Ibero-America's first GovTech Index, told so it makes sense",
+        summary: "Executive content, data visualizer and infographics for the first index measuring the readiness of the region's GovTech ecosystems.",
         headline: "Official publication in two languages",
         tags: ["Executive content", "Data visualization", "Public sector"],
-        challenge: "The Govtech ecosystem — governments working with startups, scale-ups and SMEs that use data and technology to solve public challenges — was a new, technical subject. The index had to serve two fronts at once: internal knowledge and the external strategy with country officials in Mexico, Brazil, Argentina and Colombia.",
+        challenge: "The GovTech ecosystem — governments working with startups, scale-ups and SMEs that use data and technology to solve public challenges — was a new, technical subject. The index had to serve two fronts at once: internal knowledge and the external strategy with country officials in Mexico, Brazil, Argentina and Colombia.",
         roleText: "I defined the style, design and overall structure of the index visualizer and the country infographics. I produced the infographics for the official Latin America, Spain and Portugal report in Spanish and English, wrote and edited policy briefs, and prepared materials for executive presentations and meetings with mayors, presidents and senior officials.",
         process: [
           { n: "01", title: "Understanding the subject", body: "Translating a new, technical ecosystem into language a public decision-maker could use in a meeting." },
@@ -220,14 +231,57 @@ window.AG_PORTFOLIO = {
         metrics: [
           { value: "4", label: "Countries in the external strategy: Mexico, Brazil, Argentina, Colombia" },
           { value: "2", label: "Languages of the official publication: Spanish and English" },
-          { value: "1st", label: "Govtech Index for Latin America, Spain and Portugal" }
+          { value: "1st", label: "GovTech Index for Latin America, Spain and Portugal" }
         ]
       }
     },
     {
-      slug: "conversion-a-contenido", client: "Scala Learning", year: "2022 – 2023", slot: "case-scala", n: "06",
+      slug: "planeta-esri", client: "Esri", year: "2023 – 2026", slot: "case-planeta", n: "06", img: "assets/proyecto-planeta-esri.jpg",
       es: {
-        title: "De las conversiones a la estrategia de contenido",
+        title: "Llevar la marca a las regiones: tecnología que llega al aula",
+        summary: "Planeta Esri, un evento para estudiantes y docentes. Ediciones 2023, 2024 y 2025 en seis ciudades.",
+        headline: "1.000 estudiantes en 6 ciudades",
+        tags: ["Eventos educativos", "Activaciones", "Coordinación"],
+        challenge: "El evento buscaba acercar los sistemas de información geográfica a estudiantes y docentes, y necesitaba una razón para participar más allá de la asistencia.",
+        roleText: "Participé como analista y creativa hasta 2024 y como coordinadora de los eventos en 2025. En 2023 propuse las activaciones que llevaron el evento por encima de su meta en Bogotá.",
+        process: [
+          { n: "01", title: "Activaciones", body: "Propuesta de activaciones que dieran al estudiante una razón concreta para participar." },
+          { n: "02", title: "Alcance nacional", body: "Bogotá, Cali, Bucaramanga, Quindío, Barranquilla, Medellín y Quito." },
+          { n: "03", title: "Coordinación", body: "En 2025, coordinación de los eventos de las ciudades asignadas: Cali y Medellín." },
+          { n: "04", title: "Cumplimiento", body: "Lectura de metas por ciudad para entender dónde el formato funcionaba y dónde no." }
+        ],
+        result: "En 2023 las activaciones incrementaron en 20% la meta de 250 estudiantes en Bogotá, con una participación total de 1.000 estudiantes en seis ciudades. Medellín llegó al 61% de cumplimiento: un evento que nunca antes había cumplido su meta.",
+        metrics: [
+          { value: "1.000", label: "Estudiantes participantes en total" },
+          { value: "6", label: "Ciudades: Bogotá, Cali, Bucaramanga, Quindío, Barranquilla y Medellín" },
+          { value: "+20%", label: "Sobre la meta de 250 estudiantes en Bogotá (2023)" }
+        ]
+      },
+      en: {
+        title: "Taking the brand to the regions: technology that reaches the classroom",
+        summary: "Planeta Esri, an event for students and teachers. 2023, 2024 and 2025 editions across six cities.",
+        headline: "1,000 students in 6 cities",
+        tags: ["Education events", "Activations", "Coordination"],
+        challenge: "The event set out to bring geographic information systems closer to students and teachers, and needed a reason to take part beyond simply attending.",
+        roleText: "I took part as analyst and creative through 2024 and as event coordinator in 2025. In 2023 I proposed the activations that took the event past its Bogotá target.",
+        process: [
+          { n: "01", title: "Activations", body: "Activations designed to give students a concrete reason to take part." },
+          { n: "02", title: "National reach", body: "Bogotá, Cali, Bucaramanga, Quindío, Barranquilla, Medellín and Quito." },
+          { n: "03", title: "Coordination", body: "In 2025, coordinating the events in the assigned cities: Cali and Medellín." },
+          { n: "04", title: "Target reading", body: "Reviewing targets city by city to understand where the format worked and where it didn't." }
+        ],
+        result: "In 2023 the activations pushed the 250-student Bogotá target up by 20%, with 1,000 students taking part across six cities. Medellín reached 61% of its target — an event that had never met it before.",
+        metrics: [
+          { value: "1,000", label: "Students taking part in total" },
+          { value: "6", label: "Cities: Bogotá, Cali, Bucaramanga, Quindío, Barranquilla, Medellín" },
+          { value: "+20%", label: "Above the 250-student Bogotá target (2023)" }
+        ]
+      }
+    }
+    ,{
+      slug: "conversion-a-contenido", client: "Scala Learning", year: "2022 – 2023", slot: "case-scala", n: "—", secondary: true,
+      es: {
+        title: "Posicionar y vender educación virtual: contenido que convierte",
         summary: "Un objetivo de aceleración del funnel convertido en una estrategia de contenido conectada con pauta, redes y referidos.",
         headline: "Matrículas virtuales de Uniminuto",
         tags: ["Email marketing", "Funnel", "Estrategia de contenido"],
@@ -247,7 +301,7 @@ window.AG_PORTFOLIO = {
         ]
       },
       en: {
-        title: "From conversions to content strategy",
+        title: "Positioning and selling online education: content that converts",
         summary: "A funnel-acceleration brief turned into a content strategy connected to paid media, social and referrals.",
         headline: "Uniminuto online enrollments",
         tags: ["Email marketing", "Funnel", "Content strategy"],
@@ -268,7 +322,7 @@ window.AG_PORTFOLIO = {
       }
     },
     {
-      slug: "podcast-hablemos-naturalmente", client: "Esri · MP Comunicaciones, Lighthouse", year: "2025", slot: "case-podcast", n: "07",
+      slug: "podcast-hablemos-naturalmente", client: "Esri · MP Comunicaciones, Lighthouse", year: "2025", slot: "case-podcast", n: "—", secondary: true,
       es: {
         title: "Segunda temporada de Hablemos Naturalmente",
         summary: "Acompañar la producción del podcast de sostenibilidad y llevarlo a una experiencia multicanal.",
@@ -310,49 +364,6 @@ window.AG_PORTFOLIO = {
         ]
       }
     },
-    {
-      slug: "planeta-esri", client: "Esri", year: "2023 – 2026", slot: "case-planeta", n: "08", img: "assets/proyecto-planeta-esri.jpg",
-      es: {
-        title: "Planeta Esri: acercar los SIG a estudiantes y docentes",
-        summary: "Activaciones y coordinación de los eventos educativos de la marca en seis ciudades.",
-        headline: "1.000 estudiantes en 6 ciudades",
-        tags: ["Eventos educativos", "Activaciones", "Coordinación"],
-        challenge: "El evento buscaba acercar los sistemas de información geográfica a estudiantes y docentes, y necesitaba una razón para participar más allá de la asistencia.",
-        roleText: "Participé como analista y creativa hasta 2024 y como coordinadora de los eventos en 2025. En 2023 propuse las activaciones que llevaron el evento por encima de su meta en Bogotá.",
-        process: [
-          { n: "01", title: "Activaciones", body: "Propuesta de activaciones que dieran al estudiante una razón concreta para participar." },
-          { n: "02", title: "Alcance nacional", body: "Bogotá, Cali, Bucaramanga, Quindío, Barranquilla, Medellín y Quito." },
-          { n: "03", title: "Coordinación", body: "En 2025, coordinación de los eventos de las ciudades asignadas: Cali y Medellín." },
-          { n: "04", title: "Cumplimiento", body: "Lectura de metas por ciudad para entender dónde el formato funcionaba y dónde no." }
-        ],
-        result: "En 2023 las activaciones incrementaron en 20% la meta de 250 estudiantes en Bogotá, con una participación total de 1.000 estudiantes en seis ciudades. Medellín llegó al 61% de cumplimiento: un evento que nunca antes había cumplido su meta.",
-        metrics: [
-          { value: "1.000", label: "Estudiantes participantes en total" },
-          { value: "6", label: "Ciudades: Bogotá, Cali, Bucaramanga, Quindío, Barranquilla y Medellín" },
-          { value: "+20%", label: "Sobre la meta de 250 estudiantes en Bogotá (2023)" }
-        ]
-      },
-      en: {
-        title: "Planeta Esri: bringing GIS to students and teachers",
-        summary: "Activations and coordination for the brand's education events across six cities.",
-        headline: "1,000 students in 6 cities",
-        tags: ["Education events", "Activations", "Coordination"],
-        challenge: "The event set out to bring geographic information systems closer to students and teachers, and needed a reason to take part beyond simply attending.",
-        roleText: "I took part as analyst and creative through 2024 and as event coordinator in 2025. In 2023 I proposed the activations that took the event past its Bogotá target.",
-        process: [
-          { n: "01", title: "Activations", body: "Activations designed to give students a concrete reason to take part." },
-          { n: "02", title: "National reach", body: "Bogotá, Cali, Bucaramanga, Quindío, Barranquilla, Medellín and Quito." },
-          { n: "03", title: "Coordination", body: "In 2025, coordinating the events in the assigned cities: Cali and Medellín." },
-          { n: "04", title: "Target reading", body: "Reviewing targets city by city to understand where the format worked and where it didn't." }
-        ],
-        result: "In 2023 the activations pushed the 250-student Bogotá target up by 20%, with 1,000 students taking part across six cities. Medellín reached 61% of its target — an event that had never met it before.",
-        metrics: [
-          { value: "1,000", label: "Students taking part in total" },
-          { value: "6", label: "Cities: Bogotá, Cali, Bucaramanga, Quindío, Barranquilla, Medellín" },
-          { value: "+20%", label: "Above the 250-student Bogotá target (2023)" }
-        ]
-      }
-    }
   ],
   stats: {
     es: [
@@ -378,14 +389,14 @@ window.AG_PORTFOLIO = {
       { dates: "Sept. 2022 — Abr. 2023", place: "Bogotá", role: "Especialista de Conversiones", company: "Scala Learning", note: "Email marketing, SMS y WhatsApp conectados con pauta, redes y referidos para las matrículas virtuales de Uniminuto." },
       { dates: "Oct. 2021 — Sept. 2022", place: "Bogotá", role: "Coordinadora de Social Media y Experiencia", company: "Salitre Mágico", note: "Promovida a los seis meses. Estrategia omnicanal de cinco canales, el chatbot Carola y un NPS sostenido en 80%." },
       { dates: "Abr. — Oct. 2021", place: "Bogotá", role: "Analista de Social Media", company: "Salitre Mágico", note: "Respuesta en redes sociales y atención telefónica; diagnóstico del recorrido del cliente que originó la estrategia omnicanal." },
-      { dates: "Feb. — Ago. 2020", place: "Bogotá", role: "Practicante de Comunicaciones", company: "CAF – Banco de Desarrollo de América Latina", note: "Contenido ejecutivo, infografías y policy briefs del primer Índice Govtech para Latinoamérica, España y Portugal." }
+      { dates: "Feb. — Ago. 2020", place: "Bogotá", role: "Practicante de Comunicaciones", company: "CAF – Banco de Desarrollo de América Latina", note: "Contenido ejecutivo, infografías y policy briefs del primer Índice GovTech para Latinoamérica, España y Portugal." }
     ],
     en: [
       { dates: "Apr 2023 — Present", place: "Colombia · Ecuador · Panama", role: "Communications & Content Analyst", company: "Esri", note: "Content strategy, community, integrated campaigns and events. I coordinate design, web, social and video alongside external agencies." },
       { dates: "Sep 2022 — Apr 2023", place: "Bogotá", role: "Conversion Specialist", company: "Scala Learning", note: "Email, SMS and WhatsApp connected to paid media, social and referrals for Uniminuto's online enrollments." },
       { dates: "Oct 2021 — Sep 2022", place: "Bogotá", role: "Social Media & Experience Coordinator", company: "Salitre Mágico", note: "Promoted after six months. A five-channel omnichannel strategy, the Carola chatbot and NPS held at 80%." },
       { dates: "Apr — Oct 2021", place: "Bogotá", role: "Social Media Analyst", company: "Salitre Mágico", note: "Social media response and phone support; the customer-journey diagnosis that led to the omnichannel strategy." },
-      { dates: "Feb — Aug 2020", place: "Bogotá", role: "Communications Intern", company: "CAF – Development Bank of Latin America", note: "Executive content, infographics and policy briefs for the first Govtech Index for Latin America, Spain and Portugal." }
+      { dates: "Feb — Aug 2020", place: "Bogotá", role: "Communications Intern", company: "CAF – Development Bank of Latin America", note: "Executive content, infographics and policy briefs for the first GovTech Index for Latin America, Spain and Portugal." }
     ]
   },
   certs: [

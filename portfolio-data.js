@@ -2,19 +2,18 @@
    Se carga como script clásico desde <helmet>; expone window.AG_PORTFOLIO. */
 window.AG_PORTFOLIO = {
   testimonials: [
-    { name: "Nombre y apellido", role: "Cargo actual, Empresa", photo: "",
-      es: "Ejemplo de longitud: Alejandra entró al equipo cuando la marca hablaba distinto en cada país y no teníamos criterio para decidir qué publicar. Montó el marco de mensajes, ordenó el calendario y se sentó con ventas y con producto hasta que el contenido dejó de ser un favor y pasó a ser parte del plan. Tiene algo poco común: defiende una idea con argumentos y también la suelta cuando la evidencia dice otra cosa. Coordinó diseño, web y agencias sin que se le cayera un entregable y sin perder el tono de la marca en el camino.",
-      en: "Length example: Alejandra joined when the brand sounded different in every country and we had no criteria for deciding what to publish. She built the messaging framework, fixed the calendar and sat down with sales and product until content stopped being a favour and became part of the plan. She has something rare: she defends an idea with arguments and also lets it go when the evidence says otherwise. She coordinated design, web and agencies without dropping a deliverable and without losing the brand's tone along the way." },
-    { name: "Nombre y apellido", role: "Cargo actual, Empresa", photo: "",
-      es: "Ejemplo de longitud media: trabajamos juntas en el evento más grande del año y lo que más recuerdo es la calma. Alejandra tenía claro el para qué de cada pieza, así que las decisiones de última hora se tomaban rápido y sin discusión. El equipo llegó al día del evento sabiendo qué decir y por qué.",
-      en: "Medium-length example: we worked together on the biggest event of the year and what I remember most is the calm. Alejandra was clear on the why behind every asset, so last-minute decisions happened fast and without argument. The team arrived on the day knowing what to say and why." },
-    { name: "Nombre y apellido", role: "Cargo actual, Empresa", photo: "",
-      es: "Ejemplo corto: criterio, oficio y una capacidad enorme para traducir producto técnico a algo que la gente entiende y quiere leer.",
-      en: "Short example: judgment, craft and a real ability to turn technical product into something people understand and want to read." }
+    { name: "Nicolás Aguirre", role: "Copywriter", company: "Esri", photo: "",
+      es: "Alejandra fue la persona que me dio la bienvenida y el entrenamiento cuando llegué a Esri hace 3 años. Esas primeras semanas fueron suficientes para construir la imagen que tengo de Alejandra como profesional: una mujer con una capacidad de comunicación y responsabilidad excepcional, conectadas por un modelo de disciplina que garantiza la calidad y método en cada uno de los proyectos que asume.",
+      esMore: "Con el tiempo, esa imagen del perfil profesional de Alejandra no solamente fue validada sino que fue reafirmada con creces, ya que la he visto asumir y superar retos que la han hecho figurar ante líderes y pares de distintas áreas de la organización.\n\nAlejandra es el ejemplo de lo que yo llamo “liderar con el ejemplo”. Ella demuestra que una persona que cuida y valora su imagen y su valor como profesional, siempre da lo mejor de sí en todos sus entregables. No importa cuál sea el proyecto, si es muy grande o muy sencillo. Todas sus tareas tienen el sello de calidad y creatividad que caracteriza su trabajo.",
+      en: "Alejandra was the person who welcomed and trained me when I joined Esri three years ago. Those first weeks were enough to form the image I have of her as a professional: someone with exceptional communication skills and sense of responsibility, held together by a discipline that guarantees quality and method in every project she takes on.",
+      enMore: "Over time that image was not only confirmed but far exceeded, as I have seen her take on and overcome challenges that made her stand out among leaders and peers across different areas of the organisation.\n\nAlejandra is the example of what I call leading by example. She shows that someone who cares about her image and her worth as a professional always gives her best in every deliverable. It doesn't matter whether the project is large or simple. All her work carries the mark of quality and creativity that defines her." },
+    { name: "Julián Valderrama", role: "Director de Marketing", company: "Centro Comercial Metrópolis", photo: "",
+      es: "Una profesional comprometida, proactiva y con gran capacidad de aprendizaje. Destaco especialmente su disposición, comunicación efectiva y actitud para asumir nuevos retos, cualidades que, sumadas a su entusiasmo y trabajo en equipo, le permiten generar valor en cualquier entorno profesional.",
+      en: "A committed, proactive professional with a great capacity to learn. I particularly value her willingness, effective communication and readiness to take on new challenges — qualities that, together with her enthusiasm and teamwork, let her create value in any professional environment." }
   ],
   cases: [
     {
-      slug: "estrategia-omnicanal", client: "Salitre Mágico", year: "2021 – 2022", slot: "case-omnicanal", n: "01",
+      slug: "estrategia-omnicanal", client: "Salitre Mágico", year: "2021 – 2022", slot: "case-omnicanal", n: "01", img: "assets/salitre-ecosistema-omnicanal.png",
       es: {
         title: "De la línea telefónica a una estrategia omnicanal",
         summary: "Conectar teléfono, chatbot, redes sociales, correo y punto presencial en una sola experiencia, con medición propia.",
@@ -103,45 +102,45 @@ window.AG_PORTFOLIO = {
       }
     },
     {
-      slug: "casos-de-exito", client: "Esri · Lundin Gold, Gobernación de Norte de Santander", year: "2023 – 2026", slot: "case-casos", n: "03",
+      slug: "casos-de-exito", client: "Esri · Lundin Gold, Gobernación de Norte de Santander", year: "2023 – 2026", slot: "case-casos", n: "03", img: "assets/casos-de-exito-2026.jpg",
       es: {
         title: "15+ historias de éxito que construyeron marca, confianza y comunidad",
-        summary: "Traducir proyectos de analítica geoespacial en historias de negocio para audiencias que no son técnicas.",
-        headline: "Dos países, seis historias",
-        tags: ["Storytelling", "Audiovisual", "B2B"],
-        challenge: "La comunicación de producto no le decía nada a quien decide: el valor estaba en el resultado del cliente, no en la funcionalidad.",
-        roleText: "Produje los casos de éxito y las historias de usuario de la región, en formato escrito y audiovisual, incluyendo el teaser del caso de la Gobernación de Norte de Santander y el promocional de gestión de riesgos en Ecuador.",
+        summary: "Un proceso de punta a punta para que los proyectos que sí ocurren lleguen a contarse.",
+        headline: "Más de 15 historias desde 2023",
+        tags: ["Storytelling", "Audiovisual", "Gestión de proyectos"],
+        challenge: "Los proyectos se hacían, pero no se contaban. Entre 6 y 8 casos al año quedaban sin publicar porque no existía un proceso: la solicitud llegaba por canales dispersos, nadie veía en qué fase estaba y la producción competía con lo urgente. La compañía tenía la evidencia y no la estaba usando.",
+        roleText: "Lideré el proceso completo en tres frentes: definí el estándar de casos de éxito e historias de usuario de la compañía, construí con IT un aplicativo propio para gestionar la solicitud y darle trazabilidad, y sostuve la producción regional —entrevista, escritura, audiovisual y divulgación— en Colombia, Ecuador y Panamá.",
         process: [
-          { n: "01", title: "Entrevista y foco", body: "Una conversación con el cliente para encontrar la decisión que cambió, no la lista de funcionalidades." },
-          { n: "02", title: "Casos de éxito", body: "Lundin Gold en Ecuador y la Gobernación de Norte de Santander en Colombia." },
-          { n: "03", title: "Historias de usuario", body: "Barichara, ANLA, la Federación Nacional de Cafeteros y ACT." },
-          { n: "04", title: "Activación", body: "Los casos entran a campañas, eventos y vocerías como evidencia, no como pieza suelta." }
+          { n: "01", title: "Solicitud y flujo", body: "Un aplicativo propio, construido con IT, para recibir la solicitud del cliente interno y seguir cada fase con visibilidad de gerencia general." },
+          { n: "02", title: "Entrevista y foco", body: "Una conversación con el cliente para encontrar la decisión que cambió, no la lista de funcionalidades. De ahí sale el ángulo de la historia." },
+          { n: "03", title: "Producción regional", body: "Escritura y audiovisual en tres países, coordinando cliente, diseño, video y agencias sin perder la línea de la marca." },
+          { n: "04", title: "Divulgación", body: "Teaser, pieza audiovisual y versión escrita. Cada caso entra a campañas, eventos y vocerías como evidencia, y queda en la biblioteca web." }
         ],
-        result: "Un cuerpo de evidencia reputacional disponible para los equipos comerciales y de vocería, con versión escrita y audiovisual de cada historia.",
+        result: "En 2026, por primera vez, se publicaron todos los casos después de las conferencias de usuarios: antes se producían entre 6 y 8 al año y salía uno. A corte del tercer trimestre van 7 publicados, y de los 9 de Panamá desde 2023, 3 son de este año. Hoy la biblioteca web es material vivo para ventas, eventos y vocerías.",
         metrics: [
-          { value: "2", label: "Casos de éxito: Lundin Gold y Gobernación de Norte de Santander" },
-          { value: "4", label: "Historias de usuario: Barichara, ANLA, Federación Nacional de Cafeteros y ACT" },
-          { value: "2", label: "Países: Colombia y Ecuador" }
+          { value: "15+", label: "Historias publicadas desde 2023" },
+          { value: "6", label: "Industrias: banca, petrolera, salud, educación, sector público y seguridad" },
+          { value: "3", label: "Países: Colombia, Ecuador y Panamá" }
         ]
       },
       en: {
         title: "15+ success stories that built brand, trust and community",
-        summary: "Turning geospatial analytics projects into business stories for non-technical audiences.",
-        headline: "Two countries, six stories",
-        tags: ["Storytelling", "Video", "B2B"],
-        challenge: "Product communication said nothing to the person who decides: the value was in the client's outcome, not in the feature.",
-        roleText: "I produced the region's success stories and user stories in written and video form, including the Norte de Santander regional government teaser and the risk-management promo in Ecuador.",
+        summary: "An end-to-end process so the projects that do happen actually get told.",
+        headline: "15+ stories since 2023",
+        tags: ["Storytelling", "Video", "Project management"],
+        challenge: "Projects were delivered but never told. Six to eight cases a year went unpublished because there was no process: requests arrived through scattered channels, nobody could see what stage they were in, and production always lost to the urgent. The company had the evidence and wasn't using it.",
+        roleText: "I led the full process on three fronts: I defined the company's standard for success stories and user stories, built an in-house app with IT to handle requests and give them traceability, and sustained regional production — interview, writing, video and rollout — across Colombia, Ecuador and Panama.",
         process: [
-          { n: "01", title: "Interview and focus", body: "One conversation with the client to find the decision that changed, not the feature list." },
-          { n: "02", title: "Success stories", body: "Lundin Gold in Ecuador and the Norte de Santander regional government in Colombia." },
-          { n: "03", title: "User stories", body: "Barichara, ANLA, the National Coffee Growers Federation and ACT." },
-          { n: "04", title: "Activation", body: "The stories feed campaigns, events and spokesperson work as evidence, not as loose assets." }
+          { n: "01", title: "Request and workflow", body: "An in-house app built with IT to receive the internal request and track every phase, visible to general management." },
+          { n: "02", title: "Interview and focus", body: "One conversation with the client to find the decision that changed, not the feature list. That is where the angle comes from." },
+          { n: "03", title: "Regional production", body: "Writing and video across three countries, coordinating client, design, video and agencies without losing the brand line." },
+          { n: "04", title: "Rollout", body: "Teaser, video and written version. Every case feeds campaigns, events and spokesperson work as evidence, and stays in the web library." }
         ],
-        result: "A body of reputational evidence available to sales and spokesperson teams, with a written and a video version of every story.",
+        result: "In 2026, for the first time, every case was published after the user conferences: before, 6 to 8 were produced a year and one made it out. By Q3 there are 7 published, and of the 9 from Panama since 2023, 3 are from this year. The web library is now live material for sales, events and spokesperson work.",
         metrics: [
-          { value: "2", label: "Success stories: Lundin Gold and Norte de Santander" },
-          { value: "4", label: "User stories: Barichara, ANLA, Coffee Growers Federation, ACT" },
-          { value: "2", label: "Countries: Colombia and Ecuador" }
+          { value: "15+", label: "Stories published since 2023" },
+          { value: "6", label: "Industries: banking, oil, health, education, public sector and security" },
+          { value: "3", label: "Countries: Colombia, Ecuador and Panama" }
         ]
       }
     },
@@ -239,9 +238,9 @@ window.AG_PORTFOLIO = {
       }
     },
     {
-      slug: "planeta-esri", client: "Esri", year: "2023 – 2026", slot: "case-planeta", n: "06",
+      slug: "planeta-esri", client: "Esri", year: "2023 – 2026", slot: "case-planeta", n: "06", img: "assets/planeta-esri-2026.jpeg", pos: "50% 58%", video: "omyvapRants",
       es: {
-        title: "Llevar la marca a las regiones: tecnología que llega al aula",
+        title: "Planeta Esri: llevar la marca a las regiones y la tecnología al aula",
         summary: "Planeta Esri, un evento para estudiantes y docentes. Ediciones 2023, 2024 y 2025 en seis ciudades.",
         headline: "1.000 estudiantes en 6 ciudades",
         tags: ["Eventos educativos", "Activaciones", "Coordinación"],
@@ -261,7 +260,7 @@ window.AG_PORTFOLIO = {
         ]
       },
       en: {
-        title: "Taking the brand to the regions: technology that reaches the classroom",
+        title: "Planeta Esri: taking the brand to the regions and technology to the classroom",
         summary: "Planeta Esri, an event for students and teachers. 2023, 2024 and 2025 editions across six cities.",
         headline: "1,000 students in 6 cities",
         tags: ["Education events", "Activations", "Coordination"],
@@ -282,7 +281,7 @@ window.AG_PORTFOLIO = {
       }
     }
     ,{
-      slug: "conversion-a-contenido", client: "Scala Learning", year: "2022 – 2023", slot: "case-scala", n: "—", secondary: true,
+      slug: "conversion-a-contenido", client: "Scala Learning", year: "2022 – 2023", slot: "case-scala", n: "—", secondary: true, hidden: true,
       es: {
         title: "Posicionar y vender educación virtual: contenido que convierte",
         summary: "Un objetivo de aceleración del funnel convertido en una estrategia de contenido conectada con pauta, redes y referidos.",
@@ -325,7 +324,7 @@ window.AG_PORTFOLIO = {
       }
     },
     {
-      slug: "podcast-hablemos-naturalmente", client: "Esri · MP Comunicaciones, Lighthouse", year: "2025", slot: "case-podcast", n: "—", secondary: true,
+      slug: "podcast-hablemos-naturalmente", client: "Esri · MP Comunicaciones, Lighthouse", year: "2025", slot: "case-podcast", n: "—", secondary: true, img: "assets/podcast-hablemos-naturalmente.png", pos: "50% 50%",
       es: {
         title: "Segunda temporada de Hablemos Naturalmente",
         summary: "Acompañar la producción del podcast de sostenibilidad y llevarlo a una experiencia multicanal.",
@@ -366,7 +365,39 @@ window.AG_PORTFOLIO = {
           { value: "—", label: "Listening metrics to be documented" }
         ]
       }
-    },
+    },    {
+      slug: "great-place-to-work", client: "Esri Colombia", year: "2025", slot: "case-gptw", n: "—", secondary: true, img: "assets/gptw-2025.jpeg", pos: "50% 45%",
+      es: {
+        title: "Plan de comunicaciones antes, durante y después de la Certificación Great Place to Work 2025",
+        summary: "Contenido pendiente.",
+        headline: "Certificación Great Place to Work 2025",
+        tags: ["Comunicación interna", "Cultura", "Campaña"],
+        challenge: "Contenido pendiente.",
+        roleText: "Contenido pendiente.",
+        process: [
+          { n: "01", title: "Antes", body: "Contenido pendiente." },
+          { n: "02", title: "Durante", body: "Contenido pendiente." },
+          { n: "03", title: "Después", body: "Contenido pendiente." }
+        ],
+        result: "Contenido pendiente.",
+        metrics: []
+      },
+      en: {
+        title: "Communications plan before, during and after the Great Place to Work 2025 certification",
+        summary: "Content pending.",
+        headline: "Great Place to Work 2025 certification",
+        tags: ["Internal comms", "Culture", "Campaign"],
+        challenge: "Content pending.",
+        roleText: "Content pending.",
+        process: [
+          { n: "01", title: "Before", body: "Content pending." },
+          { n: "02", title: "During", body: "Content pending." },
+          { n: "03", title: "After", body: "Content pending." }
+        ],
+        result: "Content pending.",
+        metrics: []
+      }
+    }
   ],
   stats: {
     es: [

@@ -54,6 +54,16 @@ La propagación tarda entre unos minutos y unas horas. Mientras tanto el sitio y
 2. Envía `https://tudominio.com/sitemap.xml`.
 3. Pon el enlace del portafolio en tu perfil de LinkedIn: es la señal externa más fuerte que tienes hoy.
 
+## Modo claro u oscuro según el dispositivo
+El sitio sigue la preferencia de apariencia del sistema de quien lo visita: si su equipo o teléfono está en modo oscuro ve la versión oscura, y si está en claro ve la clara. Si el dispositivo cambia de apariencia mientras la página está abierta, el sitio cambia con él.
+
+- `index.html` — versión clara y página de entrada del dominio.
+- `oscuro.html` — versión oscura.
+
+Las dos van en la raíz del sitio: la que se abre redirige a la otra cuando corresponde. Comparten el contenido desde `portfolio-data.js`, así que un cambio de texto se ve en ambas.
+
+Para forzar una versión al compartir el enlace: `?tema=oscuro` o `?tema=claro`; `?tema=auto` vuelve a seguir el dispositivo. La elección queda guardada en ese navegador.
+
 ## Para actualizar el sitio después
 Sube los archivos nuevos al repositorio (**Add file → Upload files**, mismos nombres, *Commit*). GitHub republica en un par de minutos. Si solo cambian textos o proyectos, basta con `portfolio-data.js` e `index.html`.
 

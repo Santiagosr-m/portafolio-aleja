@@ -2,12 +2,18 @@
    Se carga como script clásico desde <helmet>; expone window.AG_PORTFOLIO. */
 window.AG_PORTFOLIO = {
   testimonials: [
-    { name: "Nicolás Aguirre", role: "Copywriter", company: "Esri", photo: "",
+    { name: "Nicolás Aguirre", role: "Copywriter", company: "Esri", photo: "", linkedin: "https://www.linkedin.com/in/nicolas-aguirre-barrera",
       es: "Alejandra fue la persona que me dio la bienvenida y el entrenamiento cuando llegué a Esri hace 3 años. Esas primeras semanas fueron suficientes para construir la imagen que tengo de Alejandra como profesional: una mujer con una capacidad de comunicación y responsabilidad excepcional, conectadas por un modelo de disciplina que garantiza la calidad y método en cada uno de los proyectos que asume.",
       esMore: "Con el tiempo, esa imagen del perfil profesional de Alejandra no solamente fue validada sino que fue reafirmada con creces, ya que la he visto asumir y superar retos que la han hecho figurar ante líderes y pares de distintas áreas de la organización.\n\nAlejandra es el ejemplo de lo que yo llamo “liderar con el ejemplo”. Ella demuestra que una persona que cuida y valora su imagen y su valor como profesional, siempre da lo mejor de sí en todos sus entregables. No importa cuál sea el proyecto, si es muy grande o muy sencillo. Todas sus tareas tienen el sello de calidad y creatividad que caracteriza su trabajo.",
       en: "Alejandra was the person who welcomed and trained me when I joined Esri three years ago. Those first weeks were enough to form the image I have of her as a professional: someone with exceptional communication skills and sense of responsibility, held together by a discipline that guarantees quality and method in every project she takes on.",
       enMore: "Over time that image was not only confirmed but far exceeded, as I have seen her take on and overcome challenges that made her stand out among leaders and peers across different areas of the organisation.\n\nAlejandra is the example of what I call leading by example. She shows that someone who cares about her image and her worth as a professional always gives her best in every deliverable. It doesn't matter whether the project is large or simple. All her work carries the mark of quality and creativity that defines her." },
-    { name: "Julián Valderrama", role: "Director de Marketing", company: "Centro Comercial Metrópolis", photo: "",
+    { name: "Yindry Rodríguez", role: "Gerente", company: "Scala Learning", photo: "", linkedin: "https://www.linkedin.com/in/yindry-rodriguez",
+      es: "Conozco a Alejandra desde aproximadamente 2021, cuando empezamos a trabajar juntos en Salitre Mágico. Desde ese momento, pude apreciar su valor como analista de comunicaciones y su excelente disposición. Afortunadamente, nuestras trayectorias se volvieron a cruzar y tuve la oportunidad de contratarla nuevamente en Scala Learning, donde volvió a demostrar su gran potencial. Alejandra es una profesional resolutiva, propositiva y siempre dispuesta a ir más allá de lo que se le entrega, buscando constantemente aprender. Además de su destacada evolución profesional, es una excelente persona con la que da gusto trabajar.",
+      en: "I have known Alejandra since around 2021, when we started working together at Salitre Mágico. From the beginning I could see her value as a communications analyst and her excellent attitude. Fortunately our paths crossed again and I had the chance to hire her a second time at Scala Learning, where she once more proved her potential. Alejandra is resourceful, proactive and always willing to go beyond what she is handed, constantly looking to learn. Beyond her remarkable professional growth, she is an excellent person to work with." },
+    { name: "Iván Acosta", role: "Productor Audiovisual", company: "Lighthouse", photo: "",
+      es: "Trabajar con Alejandra es convertir ideas en acción. Su creatividad, energía y capacidad para resolver hacen que cada proyecto resalte. Es una persona auténtica, con sensibilidad artística, directa y apasionada por lo que hace.",
+      en: "Working with Alejandra means turning ideas into action. Her creativity, energy and ability to solve make every project stand out. She is authentic, with an artistic sensibility, direct and passionate about what she does." },
+    { name: "Julián Valderrama", role: "Director de Marketing", company: "Centro Comercial Metrópolis", photo: "", linkedin: "https://www.linkedin.com/in/julian-vm",
       es: "Una profesional comprometida, proactiva y con gran capacidad de aprendizaje. Destaco especialmente su disposición, comunicación efectiva y actitud para asumir nuevos retos, cualidades que, sumadas a su entusiasmo y trabajo en equipo, le permiten generar valor en cualquier entorno profesional.",
       en: "A committed, proactive professional with a great capacity to learn. I particularly value her willingness, effective communication and readiness to take on new challenges — qualities that, together with her enthusiasm and teamwork, let her create value in any professional environment." }
   ],
@@ -18,7 +24,7 @@ window.AG_PORTFOLIO = {
         title: "De la línea telefónica a una estrategia omnicanal",
         summary: "Conectar teléfono, chatbot, redes sociales, correo y punto presencial en una sola experiencia, con medición propia.",
         headline: "NPS sostenido en 80%",
-        tags: ["Estrategia omnicanal", "Servicio al cliente", "Liderazgo de área"],
+        tags: ["Estrategia omnicanal", "Servicio al cliente", "Customer experience", "Liderazgo de área"],
         challenge: "Entré como analista de social media a un proceso reactivo: se respondían llamadas, las encuestas de satisfacción eran en papel y se archivaban en carpetas físicas, y la gestión de PQR estaba dispersa sin ningún sistema que conectara la información. Cada canal hablaba su propio idioma.",
         roleText: "Diagramé en papel el recorrido del cliente y, con la jefe de marketing y el jefe de eCommerce, le dimos forma a la estrategia omnicanal de atención y experiencia del parque. Tras una queja ante la SIC documentamos y auditamos todo el proceso de PQRS junto al área de calidad.",
         process: [
@@ -27,18 +33,18 @@ window.AG_PORTFOLIO = {
           { n: "03", title: "Presencial y correo", body: "Intervención del punto de información del parque, con sus PQRS en el mismo módulo, y el correo habilitado como canal formal de seguimiento." },
           { n: "04", title: "Medición", body: "Tiempos mínimos y máximos de respuesta alineados con la SIC y la Ley 1480 de 2012, encuestas digitalizadas y un informe mensual de NPS revisado por dirección general." }
         ],
-        result: "Mi rol pasó de social media a liderar el área de servicio al cliente y experiencia. El parque no volvió a recibir una queja formal ante la SIC y el NPS se mantuvo en 80%. La credibilidad interna creció tanto que se sumaron dos personas dedicadas a medir NPS y satisfacción en distintas áreas.",
+        result: "Mi rol pasó de social media a liderar el área de servicio al cliente y experiencia. El 99% de las PQRS entró a un proceso formal y se resolvió dentro de los tiempos que estipula la ley, y el NPS se mantuvo en 80%. La medición dejó de ser un reporte para volverse insumo de decisión en la dirección general y en las gerencias de operaciones: esa credibilidad sumó dos personas dedicadas a medir NPS y satisfacción en distintas áreas.",
         metrics: [
           { value: "5", label: "Canales conectados: PBX, chatbot, redes, presencial y correo" },
           { value: "80%", label: "NPS sostenido con medición mensual" },
-          { value: "0", label: "Quejas formales ante la SIC después del rediseño" }
+          { value: "99%", label: "PQRS gestionadas dentro de los tiempos de ley" }
         ]
       },
       en: {
         title: "From a phone line to an omnichannel strategy",
         summary: "Connecting phone, chatbot, social, email and the on-site desk into one experience, with measurement of its own.",
         headline: "NPS held at 80%",
-        tags: ["Omnichannel strategy", "Customer service", "Team leadership"],
+        tags: ["Omnichannel strategy", "Customer service", "Customer experience", "Team leadership"],
         challenge: "I joined as a social media analyst into a reactive process: calls were answered, satisfaction surveys were on paper filed in physical folders, and complaint handling was scattered with no system connecting the information. Every channel spoke its own language.",
         roleText: "I mapped the customer journey on paper and, with the head of marketing and the head of eCommerce, shaped the park's omnichannel service and experience strategy. After a formal consumer-protection complaint, we documented and audited the whole complaints process with the quality team.",
         process: [
@@ -47,18 +53,19 @@ window.AG_PORTFOLIO = {
           { n: "03", title: "On-site and email", body: "The park's information desk brought into the same complaints module, and email enabled as a formal follow-up channel." },
           { n: "04", title: "Measurement", body: "Minimum and maximum response times aligned with consumer-protection law, digitized surveys and a monthly NPS report reviewed by general management." }
         ],
-        result: "My role moved from social media to leading the customer service and experience area. The park received no further formal consumer-protection complaints and NPS held at 80%. Internal credibility grew enough that two people were added to measure NPS and satisfaction across service areas.",
+        result: "My role moved from social media to leading the customer service and experience area. 99% of complaints entered a formal process and were resolved within the response times set by law, and NPS held at 80%. Measurement stopped being a report and became input for decisions at general management and operations: that credibility added two people dedicated to measuring NPS and satisfaction across areas.",
         metrics: [
           { value: "5", label: "Channels connected: PBX, chatbot, social, on-site, email" },
           { value: "80%", label: "NPS sustained with monthly measurement" },
-          { value: "0", label: "Formal consumer-protection complaints after the redesign" }
+          { value: "99%", label: "Complaints handled within statutory response times" }
         ]
       }
     },
     {
       slug: "comunidad-esri", client: "Esri", year: "2023 – 2025", slot: "case-comunidad", n: "02", img: "assets/proyecto-comunidad-esri-2026.jpg",
+      galleryLabel: { es: "Experiencia Test de nivel SIG", en: "GIS level test experience" },
       gallery: [
-        { src: "assets/proyecto-planeta-esri.jpg", es: "Estand de la comunidad en el encuentro presencial", en: "Community stand at the in-person meetup" }
+        { src: "assets/proyecto-planeta-esri.jpg", w: 1024, es: "El stand reunió al 30% de los asistentes al encuentro de la Comunidad Esri.", en: "The stand drew 30% of the attendees at the Esri Community meetup." }
       ],
       es: {
         title: "+126% de crecimiento en la Comunidad Esri de Colombia y Ecuador",
@@ -102,21 +109,29 @@ window.AG_PORTFOLIO = {
       }
     },
     {
-      slug: "casos-de-exito", client: "Esri · Lundin Gold, Gobernación de Norte de Santander", year: "2023 – 2026", slot: "case-casos", n: "03", img: "assets/casos-de-exito-2026.jpg",
+      slug: "casos-de-exito", client: "Casos e historias de éxito", year: "2023 – 2026", slot: "case-casos", n: "03", img: "assets/casos-de-exito-2026.jpg",
+      videos: [
+        { id: "hbAybl2hAfo", es: "Colegio Isaac Rabin: aprender y transformar el entorno con ArcGIS", en: "Colegio Isaac Rabin: learning and transforming the environment with ArcGIS" },
+        { id: "D7ByMnbvxao", es: "Global Bank transforma la gestión del riesgo con inteligencia geográfica", en: "Global Bank transforms risk management with geographic intelligence" },
+        { id: "5AvXZC0HFm8", es: "Caso de éxito ArcGIS · Colegio Montessori de Cartagena", en: "ArcGIS success story · Colegio Montessori de Cartagena" },
+        { id: "IYTLoWhi0IY", es: "Famisanar: innovando la gestión de salud con tecnología geoespacial", en: "Famisanar: innovating health management with geospatial technology" },
+        { id: "ZQZWKGBrxIE", es: "ArcGIS para prevenir las violencias por razones de sexo y género en Norte de Santander", en: "ArcGIS to prevent gender-based violence in Norte de Santander" },
+        { id: "Az2SsgualNs", es: "Estrategia geoespacial para una minería más eficiente y sostenible", en: "A geospatial strategy for more efficient, sustainable mining" }
+      ],
       es: {
         title: "15+ historias de éxito que construyeron marca, confianza y comunidad",
-        summary: "Un proceso de punta a punta para que los proyectos que sí ocurren lleguen a contarse.",
+        summary: "Un proceso de punta a punta para convertir los proyectos entregados en evidencia publicable de negocio.",
         headline: "Más de 15 historias desde 2023",
-        tags: ["Storytelling", "Audiovisual", "Gestión de proyectos"],
+        tags: ["Storytelling", "Audiovisual", "Comunicación institucional", "Gestión de proyectos"],
         challenge: "Los proyectos se hacían, pero no se contaban. Entre 6 y 8 casos al año quedaban sin publicar porque no existía un proceso: la solicitud llegaba por canales dispersos, nadie veía en qué fase estaba y la producción competía con lo urgente. La compañía tenía la evidencia y no la estaba usando.",
-        roleText: "Lideré el proceso completo en tres frentes: definí el estándar de casos de éxito e historias de usuario de la compañía, construí con IT un aplicativo propio para gestionar la solicitud y darle trazabilidad, y sostuve la producción regional —entrevista, escritura, audiovisual y divulgación— en Colombia, Ecuador y Panamá.",
+        roleText: "Lideré el proceso completo en tres frentes: definí el estándar de casos de éxito e historias de usuario de la compañía, construí con IT un aplicativo propio para gestionar la solicitud y darle trazabilidad, y sostuve la producción regional de la mayoría de casos de éxito, casos de uso e historias de usuario —entrevista, escritura, audiovisual y divulgación— en Colombia, Ecuador y Panamá.",
         process: [
           { n: "01", title: "Solicitud y flujo", body: "Un aplicativo propio, construido con IT, para recibir la solicitud del cliente interno y seguir cada fase con visibilidad de gerencia general." },
           { n: "02", title: "Entrevista y foco", body: "Una conversación con el cliente para encontrar la decisión que cambió, no la lista de funcionalidades. De ahí sale el ángulo de la historia." },
           { n: "03", title: "Producción regional", body: "Escritura y audiovisual en tres países, coordinando cliente, diseño, video y agencias sin perder la línea de la marca." },
           { n: "04", title: "Divulgación", body: "Teaser, pieza audiovisual y versión escrita. Cada caso entra a campañas, eventos y vocerías como evidencia, y queda en la biblioteca web." }
         ],
-        result: "En 2026, por primera vez, se publicaron todos los casos después de las conferencias de usuarios: antes se producían entre 6 y 8 al año y salía uno. A corte del tercer trimestre van 7 publicados, y de los 9 de Panamá desde 2023, 3 son de este año. Hoy la biblioteca web es material vivo para ventas, eventos y vocerías.",
+        result: "En 2026, por primera vez, se publicaron todos los casos después de las conferencias de usuarios, incluidas por primera vez las de Ecuador y Panamá: antes se producían entre 6 y 8 al año y salía uno. A corte del tercer trimestre van 7 publicados, y de los 9 de Panamá desde 2023, 3 son de este año. Hoy la biblioteca web es material vivo para ventas, eventos y vocerías.",
         metrics: [
           { value: "15+", label: "Historias publicadas desde 2023" },
           { value: "6", label: "Industrias: banca, petrolera, salud, educación, sector público y seguridad" },
@@ -125,18 +140,18 @@ window.AG_PORTFOLIO = {
       },
       en: {
         title: "15+ success stories that built brand, trust and community",
-        summary: "An end-to-end process so the projects that do happen actually get told.",
+        summary: "An end-to-end process that turns delivered projects into publishable business evidence.",
         headline: "15+ stories since 2023",
-        tags: ["Storytelling", "Video", "Project management"],
+        tags: ["Storytelling", "Video", "Institutional communication", "Project management"],
         challenge: "Projects were delivered but never told. Six to eight cases a year went unpublished because there was no process: requests arrived through scattered channels, nobody could see what stage they were in, and production always lost to the urgent. The company had the evidence and wasn't using it.",
-        roleText: "I led the full process on three fronts: I defined the company's standard for success stories and user stories, built an in-house app with IT to handle requests and give them traceability, and sustained regional production — interview, writing, video and rollout — across Colombia, Ecuador and Panama.",
+        roleText: "I led the full process on three fronts: I defined the company's standard for success stories and user stories, built an in-house app with IT to handle requests and give them traceability, and sustained regional production for most success stories, use cases and user stories — interview, writing, video and rollout — across Colombia, Ecuador and Panama.",
         process: [
           { n: "01", title: "Request and workflow", body: "An in-house app built with IT to receive the internal request and track every phase, visible to general management." },
           { n: "02", title: "Interview and focus", body: "One conversation with the client to find the decision that changed, not the feature list. That is where the angle comes from." },
           { n: "03", title: "Regional production", body: "Writing and video across three countries, coordinating client, design, video and agencies without losing the brand line." },
           { n: "04", title: "Rollout", body: "Teaser, video and written version. Every case feeds campaigns, events and spokesperson work as evidence, and stays in the web library." }
         ],
-        result: "In 2026, for the first time, every case was published after the user conferences: before, 6 to 8 were produced a year and one made it out. By Q3 there are 7 published, and of the 9 from Panama since 2023, 3 are from this year. The web library is now live material for sales, events and spokesperson work.",
+        result: "In 2026, for the first time, every case was published after the user conferences, including the Ecuador and Panama editions for the first time: before, 6 to 8 were produced a year and one made it out. By Q3 there are 7 published, and of the 9 from Panama since 2023, 3 are from this year. The web library is now live material for sales, events and spokesperson work.",
         metrics: [
           { value: "15+", label: "Stories published since 2023" },
           { value: "6", label: "Industries: banking, oil, health, education, public sector and security" },
@@ -152,7 +167,7 @@ window.AG_PORTFOLIO = {
         headline: "El parque recibía +20 llamadas por hora",
         tags: ["Diseño conversacional", "Automatización", "Experiencia de cliente"],
         challenge: "El teléfono era el único canal disponible y el parque recibía más de veinte llamadas por hora, la mayoría por preguntas repetidas: horarios, precios, atracciones cerradas. Había que automatizar la información y controlar el acceso a un agente humano sin que el visitante sintiera un muro.",
-        roleText: "Con el proveedor IT Cloud Services diseñé el esquema inicial del chatbot: elegí su nombre y su diseño como coordinadora, construí el mapa de flujo conversacional y quedé a cargo de su funcionamiento, sus métricas y sus mejoras.",
+        roleText: "Con el proveedor IT Cloud Services diseñé el esquema inicial del chatbot: elegí su nombre y su diseño como coordinadora, construí el mapa de flujo conversacional y quedé a cargo —liderando al equipo de social media— de garantizar el correcto funcionamiento del proceso, cumplir las métricas acordadas e integrar servicio al cliente con experiencia y marca.",
         process: [
           { n: "01", title: "Árbol de decisiones", body: "Bienvenida y datos personales, y de ahí un menú con compras, preguntas frecuentes, cambios, devoluciones, PQRS y módulos comerciales para fiestas infantiles y eventos corporativos." },
           { n: "02", title: "Dos canales, dos lenguajes", body: "En la web, un flujo conversacional de texto. En WhatsApp, piezas gráficas que facilitaban la comunicación y diversificaban la experiencia." },
@@ -172,7 +187,7 @@ window.AG_PORTFOLIO = {
         headline: "The park took 20+ calls an hour",
         tags: ["Conversation design", "Automation", "Customer experience"],
         challenge: "The phone was the only channel available and the park received more than twenty calls an hour, mostly repeat questions: opening hours, prices, closed rides. Information had to be automated and access to a human agent managed — without the visitor hitting a wall.",
-        roleText: "With the vendor IT Cloud Services I designed the chatbot's initial scheme: as coordinator I chose its name and design, built the conversational flow map, and owned its operation, metrics and improvements.",
+        roleText: "With the vendor IT Cloud Services I designed the chatbot's initial scheme: as coordinator I chose its name and design, built the conversational flow map, and was left in charge — leading the social media team — of keeping the process running properly, meeting the agreed metrics and integrating customer service with experience and brand.",
         process: [
           { n: "01", title: "Decision tree", body: "Welcome and personal details, then a menu covering purchases, FAQs, changes, refunds, complaints and commercial modules for kids' parties and corporate events." },
           { n: "02", title: "Two channels, two languages", body: "On the web, a text conversation. On WhatsApp, graphic assets that eased communication and varied the experience." },
@@ -189,12 +204,13 @@ window.AG_PORTFOLIO = {
     },
     {
       slug: "indice-govtech", client: "CAF – Banco de Desarrollo de América Latina", year: "2020", slot: "case-govtech", n: "05",
-      img: "assets/caf-visualizador-govtech.png", illo: "screen", screenUrl: "govtechindex.org · The GovTech Index 2020",
+      galleryLabel: { es: "Otras piezas del Índice GovTech", en: "More GovTech Index assets" },
+      img: "assets/caf-visualizador-govtech-2026.png", illo: "screen", screenUrl: "govtechindex.org · The GovTech Index 2020",
       gallery: [
-        { src: "assets/caf-policy-brief-12.png", es: "Policy Brief #12 · transformación digital del sector público", en: "Policy Brief #12 · digital transformation of the public sector" },
-        { src: "assets/caf-infografia-espana.png", es: "Infografía de país · España", en: "Country infographic · Spain" },
-        { src: "assets/caf-infografia-brasil.png", es: "Infografía de país · Brasil", en: "Country infographic · Brazil" },
-        { src: "assets/caf-infografia-uruguay.png", es: "Infografía de país · Uruguay", en: "Country infographic · Uruguay" }
+        { src: "assets/caf-policy-brief-12.png", w: 265, es: "Policy Brief #12 · transformación digital del sector público", en: "Policy Brief #12 · digital transformation of the public sector" },
+        { src: "assets/caf-infografia-espana.png", w: 266, es: "Infografía de país · España", en: "Country infographic · Spain" },
+        { src: "assets/caf-infografia-brasil.png", w: 264, es: "Infografía de país · Brasil", en: "Country infographic · Brazil" },
+        { src: "assets/caf-infografia-uruguay.png", w: 263, es: "Infografía de país · Uruguay", en: "Country infographic · Uruguay" }
       ],
       es: {
         title: "El primer Índice GovTech de Iberoamérica, contado para que se entienda",
@@ -244,15 +260,15 @@ window.AG_PORTFOLIO = {
         summary: "Planeta Esri, un evento para estudiantes y docentes. Ediciones 2023, 2024 y 2025 en seis ciudades.",
         headline: "1.000 estudiantes en 6 ciudades",
         tags: ["Eventos educativos", "Activaciones", "Coordinación"],
-        challenge: "El evento buscaba acercar los sistemas de información geográfica a estudiantes y docentes, y necesitaba una razón para participar más allá de la asistencia.",
-        roleText: "Participé como analista y creativa hasta 2024 y como coordinadora de los eventos en 2025. En 2023 propuse las activaciones que llevaron el evento por encima de su meta en Bogotá.",
+        challenge: "El evento buscaba acercar los Sistemas de Información Geográfica a estudiantes y docentes, y necesitaba una razón para participar más allá de la asistencia.",
+        roleText: "En 2023 propuse las activaciones que llevaron el evento por encima de su meta en Bogotá. Participé como creativa hasta 2024 y en 2025 asumí la coordinación de la campaña de los eventos.",
         process: [
           { n: "01", title: "Activaciones", body: "Propuesta de activaciones que dieran al estudiante una razón concreta para participar." },
           { n: "02", title: "Alcance nacional", body: "Bogotá, Cali, Bucaramanga, Quindío, Barranquilla, Medellín y Quito." },
           { n: "03", title: "Coordinación", body: "En 2025, coordinación de los eventos de las ciudades asignadas: Cali y Medellín." },
           { n: "04", title: "Cumplimiento", body: "Lectura de metas por ciudad para entender dónde el formato funcionaba y dónde no." }
         ],
-        result: "En 2023 las activaciones incrementaron en 20% la meta de 250 estudiantes en Bogotá, con una participación total de 1.000 estudiantes en seis ciudades. Medellín llegó al 61% de cumplimiento: un evento que nunca antes había cumplido su meta.",
+        result: "En 2023 las activaciones incrementaron en 20% la meta de 250 estudiantes en Bogotá, con una participación total de 1.000 estudiantes en seis ciudades. Mientras que en 2025, Medellín llegó al 61% de cumplimiento: un evento que nunca antes había cumplido su meta.",
         metrics: [
           { value: "1.000", label: "Estudiantes participantes en total" },
           { value: "6", label: "Ciudades: Bogotá, Cali, Bucaramanga, Quindío, Barranquilla y Medellín" },
@@ -265,14 +281,14 @@ window.AG_PORTFOLIO = {
         headline: "1,000 students in 6 cities",
         tags: ["Education events", "Activations", "Coordination"],
         challenge: "The event set out to bring geographic information systems closer to students and teachers, and needed a reason to take part beyond simply attending.",
-        roleText: "I took part as analyst and creative through 2024 and as event coordinator in 2025. In 2023 I proposed the activations that took the event past its Bogotá target.",
+        roleText: "In 2023 I proposed the activations that took the event past its Bogotá target. I worked as creative through 2024 and in 2025 took over coordination of the events campaign.",
         process: [
           { n: "01", title: "Activations", body: "Activations designed to give students a concrete reason to take part." },
           { n: "02", title: "National reach", body: "Bogotá, Cali, Bucaramanga, Quindío, Barranquilla, Medellín and Quito." },
           { n: "03", title: "Coordination", body: "In 2025, coordinating the events in the assigned cities: Cali and Medellín." },
           { n: "04", title: "Target reading", body: "Reviewing targets city by city to understand where the format worked and where it didn't." }
         ],
-        result: "In 2023 the activations pushed the 250-student Bogotá target up by 20%, with 1,000 students taking part across six cities. Medellín reached 61% of its target — an event that had never met it before.",
+        result: "In 2023 the activations pushed the 250-student Bogotá target up by 20%, with 1,000 students taking part across six cities. In 2025, meanwhile, Medellín reached 61% of its target — an event that had never met it before.",
         metrics: [
           { value: "1,000", label: "Students taking part in total" },
           { value: "6", label: "Cities: Bogotá, Cali, Bucaramanga, Quindío, Barranquilla, Medellín" },
@@ -325,6 +341,14 @@ window.AG_PORTFOLIO = {
     },
     {
       slug: "podcast-hablemos-naturalmente", client: "Esri · MP Comunicaciones, Lighthouse", year: "2025", slot: "case-podcast", n: "—", secondary: true, img: "assets/podcast-hablemos-naturalmente.png", pos: "50% 50%",
+      videos: [
+        { id: "ikRxY7_guQY", es: "", en: "" },
+        { id: "CXHsUrkAd74", es: "", en: "" }
+      ],
+      videosNote: {
+        es: "*La producción del podcast es autoría de Esri Colombia, Ecuador y Panamá. La segunda temporada contó además con el apoyo de MP Comunicaciones y Lighthouse; desde mi rol acompañé una parte de la producción en lo ya descrito.",
+        en: "*The podcast is produced by Esri Colombia, Ecuador and Panama. The second season was also supported by MP Comunicaciones and Lighthouse; from my role I supported part of the production as described above."
+      },
       es: {
         title: "Segunda temporada de Hablemos Naturalmente",
         summary: "Acompañar la producción del podcast de sostenibilidad y llevarlo a una experiencia multicanal.",
@@ -367,35 +391,49 @@ window.AG_PORTFOLIO = {
       }
     },    {
       slug: "great-place-to-work", client: "Esri Colombia", year: "2025", slot: "case-gptw", n: "—", secondary: true, img: "assets/gptw-2025.jpeg", pos: "50% 45%",
+      videos: [
+        { id: "o1Wg2aJRz34", es: "", en: "" },
+        { id: "CUwR45VdpIo", es: "", en: "" }
+      ],
+      videosNote: {
+        es: "*Las piezas son autoría de Esri Colombia, Ecuador y Panamá. Desde mi rol lideré la estrategia de comunicaciones de la campaña: concepto, guion y divulgación del antes, el durante y el después de la certificación.",
+        en: "*These pieces are the work of Esri Colombia, Ecuador and Panama. From my role I led the campaign's communications strategy: concept, script and rollout across the before, during and after of the certification."
+      },
       es: {
         title: "Plan de comunicaciones antes, durante y después de la Certificación Great Place to Work 2025",
-        summary: "Contenido pendiente.",
+        summary: "Una campaña transversal para conseguir la certificación y, al mismo tiempo, explicarle a la organización qué significaba.",
         headline: "Certificación Great Place to Work 2025",
         tags: ["Comunicación interna", "Cultura", "Campaña"],
-        challenge: "Contenido pendiente.",
-        roleText: "Contenido pendiente.",
+        challenge: "La certificación dependía de la participación de los colaboradores, y participar dependía de entenderla. El reto era doble: alcanzar la meta de respuesta en las encuestas requeridas y, a la vez, que la gente comprendiera qué era Great Place to Work, para qué servía y qué ganaba con ella.",
+        roleText: "Lideré la estrategia de comunicaciones del antes, el durante y el después: eventos, información de valor, dinámicas y divulgación para explicar el sentido de la certificación y sus beneficios. Produje además piezas de contenido emotivas y cercanas, que conectaran con el orgullo de pertenecer a la organización en lugar de repetir el requisito.",
         process: [
-          { n: "01", title: "Antes", body: "Contenido pendiente." },
-          { n: "02", title: "Durante", body: "Contenido pendiente." },
-          { n: "03", title: "Después", body: "Contenido pendiente." }
+          { n: "01", title: "Antes", body: "Explicar qué es la certificación y por qué importa, con información de valor y dinámicas que movieran la participación en las encuestas." },
+          { n: "02", title: "Durante", body: "Eventos y piezas emotivas que conectaran el proceso con el orgullo de pertenecer, no con el trámite." },
+          { n: "03", title: "Después", body: "Lanzamiento y divulgación del resultado, sosteniendo la conversación durante todo el año." }
         ],
-        result: "Contenido pendiente.",
-        metrics: []
+        result: "Se alcanzó a tiempo la participación requerida en las encuestas y una asistencia sólida a los eventos de lanzamiento y divulgación. La campaña se mantuvo transversal durante todo el año y sirvió de puente hacia la campaña de liderazgo de 2026, que nace de esta certificación y que sigo trabajando.",
+        metrics: [
+          { value: "3", label: "Fases de la campaña: antes, durante y después" },
+          { value: "2025 – 2026", label: "Campaña transversal que continúa en liderazgo" }
+        ]
       },
       en: {
         title: "Communications plan before, during and after the Great Place to Work 2025 certification",
-        summary: "Content pending.",
+        summary: "A year-long campaign to earn the certification and, at the same time, explain to the organisation what it meant.",
         headline: "Great Place to Work 2025 certification",
         tags: ["Internal comms", "Culture", "Campaign"],
-        challenge: "Content pending.",
-        roleText: "Content pending.",
+        challenge: "The certification depended on employee participation, and participation depended on understanding it. The challenge was twofold: hit the response target in the required surveys and, at the same time, make people understand what Great Place to Work was, what it was for and what they gained from it.",
+        roleText: "I led the communications strategy across the before, during and after: events, useful information, activities and outreach to explain the point of the certification and its benefits. I also produced warm, human content pieces that connected with the pride of belonging rather than restating the requirement.",
         process: [
-          { n: "01", title: "Before", body: "Content pending." },
-          { n: "02", title: "During", body: "Content pending." },
-          { n: "03", title: "After", body: "Content pending." }
+          { n: "01", title: "Before", body: "Explaining what the certification is and why it matters, with useful information and activities that drove survey participation." },
+          { n: "02", title: "During", body: "Events and emotive pieces connecting the process with the pride of belonging, not with paperwork." },
+          { n: "03", title: "After", body: "Launching and sharing the result, keeping the conversation alive all year." }
         ],
-        result: "Content pending.",
-        metrics: []
+        result: "The required survey participation was reached on time, with solid attendance at the launch and rollout events. The campaign ran across the whole year and bridged into the 2026 leadership campaign, which grows out of this certification and which I continue to work on.",
+        metrics: [
+          { value: "3", label: "Campaign phases: before, during and after" },
+          { value: "2025 – 2026", label: "Year-long campaign continuing into leadership" }
+        ]
       }
     }
   ],

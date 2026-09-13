@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html><head>
 <meta charset="utf-8">
-<script>(function(){try{var q=new URLSearchParams(location.search),p=q.get("tema")||q.get("theme");if(p==="claro"||p==="light"){localStorage.setItem("ag-tema","claro");}else if(p==="oscuro"||p==="dark"){localStorage.setItem("ag-tema","oscuro");}else if(p==="auto"){localStorage.removeItem("ag-tema");}var mq=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)");var self="claro";function want(){var f=localStorage.getItem("ag-tema");return f?f:((mq&&mq.matches)?"oscuro":"claro");}function go(){var w=want();if(w!==self){location.replace((w==="oscuro"?"oscuro.html":"index.html")+location.hash);}}go();if(mq&&mq.addEventListener){mq.addEventListener("change",go);}}catch(e){}})();</script>
+<script>(function(){try{var q=new URLSearchParams(location.search),p=q.get("tema")||q.get("theme");if(p==="claro"||p==="light"){localStorage.setItem("ag-tema","claro");}else if(p==="oscuro"||p==="dark"){localStorage.setItem("ag-tema","oscuro");}else if(p==="auto"){localStorage.removeItem("ag-tema");}var mq=window.matchMedia&&window.matchMedia("(prefers-color-scheme: dark)");var self="oscuro";function want(){var f=localStorage.getItem("ag-tema");return f?f:((mq&&mq.matches)?"oscuro":"claro");}function go(){var w=want();if(w!==self){location.replace((w==="oscuro"?"oscuro.html":"index.html")+location.hash);}}go();if(mq&&mq.addEventListener){mq.addEventListener("change",go);}}catch(e){}})();</script>
 <meta name="viewport" content="width=device-width, initial-scale=1">
 <script src="support.js"></script>
 </head>
@@ -12,7 +12,8 @@
 <meta name="description" content="Portafolio de Alejandra García Gómez, estratega de contenido y marca para compañías B2B en Latinoamérica. Estrategia de contenidos, identidad verbal, campañas integradas, SEO y AEO en Colombia, Ecuador y Panamá.">
 <meta name="author" content="Alejandra García Gómez">
 <meta name="robots" content="index, follow, max-image-preview:large">
-<meta name="theme-color" content="#2A1B13">
+<meta name="theme-color" content="#15120E">
+<meta name="color-scheme" content="dark">
 
 <link rel="canonical" href="https://alejandragarciagomez.com/">
 <link rel="alternate" hreflang="es-CO" href="https://alejandragarciagomez.com/">
@@ -293,10 +294,11 @@
 <script src="./image-slot.js"></script>
 <style>
   :root { --ease-out: cubic-bezier(0.23, 1, 0.32, 1); }
-  body { margin:0; background:#F6F1EA; color:#2A1B13; font-family:"Manrope", system-ui, sans-serif; }
-  ::selection { background:#FDE0BE; color:#2A1B13; }
+  body { margin:0; background:#15120E; color:#F1E9E0; font-family:"Manrope", system-ui, sans-serif; }
+  ::selection { background:#3A2A14; color:#F1E9E0; }
   a { color:inherit; text-decoration:none; }
-  *:focus-visible { outline:2px solid #A85410; outline-offset:3px; }
+  ::selection { background:#FF9E52; color:#15120E; }
+  *:focus-visible { outline:2px solid #FF9E52; outline-offset:3px; }
   [data-dark] *:focus-visible, [data-dark]:focus-visible { outline-color:#FFB86B; }
   [data-reveal] { animation:rise .6s var(--ease-out) both; }
   @supports (animation-timeline: view()) {
@@ -326,7 +328,7 @@
   @keyframes typing { 0%,100% { opacity:.35; transform:translateY(0); } 50% { opacity:1; transform:translateY(-2px); } }
   @media (hover:hover) and (pointer:fine) {
     [data-lift] { transition:transform .45s var(--ease-out), border-color .45s var(--ease-out), background-color .45s var(--ease-out); }
-    [data-lift]:hover { transform:translateY(-3px); border-color:rgba(247,145,57,.75); background-color:#FEF6EA; }
+    [data-lift]:hover { transform:translateY(-3px); border-color:rgba(247,145,57,.75); background-color:#2E2418; }
     [data-zoom] > * { transition:transform .5s var(--ease-out); }
     [data-lift]:hover [data-zoom] > * { transform:scale(1.045); }
     nav a:hover > span { transform:scaleX(1) !important; }
@@ -358,7 +360,7 @@
   }
   .pbg, .pveil, .pcta, .par { transition:transform .8s var(--ease-out), opacity .5s var(--ease-out), border-color .4s var(--ease-out); }
   ::-webkit-scrollbar { width:9px; height:9px; }
-  ::-webkit-scrollbar-thumb { background:#cbc5b9; border-radius:9px; }
+  ::-webkit-scrollbar-thumb { background:#4A443A; border-radius:9px; }
   ::-webkit-scrollbar-track { background:transparent; }
 </style>
 </helmet>
@@ -382,32 +384,32 @@
   <h2>Contacto</h2>
   <p><a href="mailto:comunicsocial0@gmail.com">comunicsocial0@gmail.com</a> · Bogotá, Colombia</p>
 </noscript>
-<div style="display:flex; flex-direction:column; height:100vh; background:#F6F1EA; color:#2A1B13; font-family:Manrope, system-ui, sans-serif; font-size:15.5px; line-height:1.6; overflow:hidden;">
+<div style="display:flex; flex-direction:column; height:100vh; background:#15120E; color:#F1E9E0; font-family:Manrope, system-ui, sans-serif; font-size:15.5px; line-height:1.6; overflow:hidden;">
 
-  <header style="display:flex; align-items:center; justify-content:space-between; gap:clamp(14px,3vw,40px); padding:clamp(14px,1.6vw,20px) clamp(22px,4vw,60px); background:rgba(245,241,234,.93); backdrop-filter:blur(10px); border-bottom:1px solid rgba(247,145,57,.32); animation:rise .5s var(--ease-out) both;">
+  <header style="display:flex; align-items:center; justify-content:space-between; gap:clamp(14px,3vw,40px); padding:clamp(14px,1.6vw,20px) clamp(22px,4vw,60px); background:rgba(21,18,14,.93); backdrop-filter:blur(10px); border-bottom:1px solid rgba(247,145,57,.32); animation:rise .5s var(--ease-out) both;">
     <a href="#inicio" onClick="{{ goTop }}" style="display:flex; align-items:center; gap:11px; white-space:nowrap;">
-      <span style="width:26px; height:26px; flex:none; border-radius:7px; background:#2A1B13; display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" style="width:15px; height:15px; color:#FFB86B;" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 3v18M4.5 7l15 10M19.5 7l-15 10"></path></svg></span>
+      <span style="width:26px; height:26px; flex:none; border-radius:7px; background:#3A2C1F; display:flex; align-items:center; justify-content:center;"><svg viewBox="0 0 24 24" style="width:15px; height:15px; color:#FFB86B;" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M12 3v18M4.5 7l15 10M19.5 7l-15 10"></path></svg></span>
       <span style="font-family:Fraunces, Georgia, serif; font-size:clamp(16px,1.5vw,20px); font-weight:500; letter-spacing:-0.012em;">Alejandra García</span>
     </a>
-    <button data-burger="" onClick="{{ toggleMenu }}" aria-label="Menú" style="align-items:center; justify-content:center; gap:5px; flex-direction:column; width:44px; height:44px; background:transparent; border:1px solid rgba(42,27,19,.2); border-radius:999px; cursor:pointer; padding:0;">
-      <span style="width:16px; height:1.5px; background:#2A1B13; display:block;"></span>
-      <span style="width:16px; height:1.5px; background:#2A1B13; display:block;"></span>
-      <span style="width:16px; height:1.5px; background:#2A1B13; display:block;"></span>
+    <button data-burger="" onClick="{{ toggleMenu }}" aria-label="Menú" style="align-items:center; justify-content:center; gap:5px; flex-direction:column; width:44px; height:44px; background:transparent; border:1px solid rgba(255,255,255,.19); border-radius:999px; cursor:pointer; padding:0;">
+      <span style="width:16px; height:1.5px; background:#F1E9E0; display:block;"></span>
+      <span style="width:16px; height:1.5px; background:#F1E9E0; display:block;"></span>
+      <span style="width:16px; height:1.5px; background:#F1E9E0; display:block;"></span>
     </button>
     <nav data-desknav="" style="display:flex; align-items:center; gap:clamp(11px,1.7vw,24px);">
       <sc-for list="{{ nav }}" as="n" hint-placeholder-count="5">
-        <a href="{{ n.href }}" onClick="{{ n.go }}" style="position:relative; font-size:14.5px; white-space:nowrap; padding:3px 1px; color:{{ n.color }}; transition:color .4s var(--ease-out);" style-hover="color:#2A1B13;">
+        <a href="{{ n.href }}" onClick="{{ n.go }}" style="position:relative; font-size:14.5px; white-space:nowrap; padding:3px 1px; color:{{ n.color }}; transition:color .4s var(--ease-out);" style-hover="color:#F1E9E0;">
           {{ n.label }}
           <span style="position:absolute; left:0; right:0; bottom:-3px; height:2px; background:#F79139; transform:scaleX({{ n.scale }}); transform-origin:left; transition:transform .32s var(--ease-out);"></span>
         </a>
       </sc-for>
-      <a href="{{ cvHref }}" download="Alejandra-Garcia-CV.pdf" style="font-size:13.5px; white-space:nowrap; background:#2A1B13; color:#F6F1EA; border-radius:999px; padding:9px 18px; transition:background-color .4s var(--ease-out), transform .4s var(--ease-out);" style-hover="background:#C4661A; transform:translateY(-1px);">{{ t.ctaCv }}</a>
-      <button onClick="{{ toggleLang }}" style="font-family:inherit; font-size:12.5px; background:transparent; color:#6E5D51; border:1px solid rgba(42,27,19,.2); border-radius:999px; padding:8px 14px; cursor:pointer; white-space:nowrap; transition:color .4s var(--ease-out), border-color .4s var(--ease-out);" style-hover="color:#C4661A; border-color:#C4661A;">{{ t.langLabel }}</button>
+      <a href="{{ cvHref }}" download="Alejandra-Garcia-CV.pdf" style="font-size:13.5px; white-space:nowrap; background:#F1E9E0; color:#15120E; border-radius:999px; padding:9px 18px; transition:background-color .4s var(--ease-out), transform .4s var(--ease-out);" style-hover="background:#FFB06A; transform:translateY(-1px);">{{ t.ctaCv }}</a>
+      <button onClick="{{ toggleLang }}" style="font-family:inherit; font-size:12.5px; background:transparent; color:#A59486; border:1px solid rgba(255,255,255,.19); border-radius:999px; padding:8px 14px; cursor:pointer; white-space:nowrap; transition:color .4s var(--ease-out), border-color .4s var(--ease-out);" style-hover="color:#FFB06A; border-color:#FFB06A;">{{ t.langLabel }}</button>
     </nav>
   </header>
 
   <sc-if value="{{ menuOpen }}" hint-placeholder-val="{{ false }}">
-    <div data-dark="" style="position:fixed; inset:0; z-index:40; background:#2A1B13; color:#F7EFE7; display:flex; flex-direction:column; padding:clamp(22px,5vw,40px); animation:fadeIn .25s ease both;">
+    <div data-dark="" style="position:fixed; inset:0; z-index:40; background:#15120E; color:#F7EFE7; display:flex; flex-direction:column; padding:clamp(22px,5vw,40px); animation:fadeIn .25s ease both;">
       <div style="display:flex; align-items:center; justify-content:space-between; gap:16px; margin-bottom:clamp(24px,5vw,44px);">
         <span style="font-family:Fraunces, Georgia, serif; font-size:19px; font-weight:500;">Alejandra García</span>
         <button onClick="{{ toggleMenu }}" aria-label="Cerrar menú" style="width:44px; height:44px; display:flex; align-items:center; justify-content:center; background:transparent; border:1px solid rgba(242,235,228,.3); border-radius:999px; color:#F7EFE7; font-size:22px; line-height:1; cursor:pointer;">×</button>
@@ -420,7 +422,7 @@
         </sc-for>
       </nav>
       <div style="margin-top:auto; display:flex; flex-wrap:wrap; gap:11px; padding-top:26px;">
-        <a href="{{ cvHref }}" download="Alejandra-Garcia-CV.pdf" style="font-size:14.5px; background:#F7EFE7; color:#2A1B13; border-radius:999px; padding:13px 22px;">{{ t.ctaCv }}</a>
+        <a href="{{ cvHref }}" download="Alejandra-Garcia-CV.pdf" style="font-size:14.5px; background:#FFA95C; color:#241710; border-radius:999px; padding:13px 22px;">{{ t.ctaCv }}</a>
         <button onClick="{{ toggleLang }}" style="font-family:inherit; font-size:14.5px; background:transparent; color:#CBB5A3; border:1px solid rgba(242,235,228,.28); border-radius:999px; padding:13px 22px; cursor:pointer;">{{ t.langLabel }}</button>
       </div>
     </div>
@@ -429,7 +431,7 @@
   <main id="pane" style="flex:1; overflow:auto; scroll-behavior:smooth;">
 
   <sc-if value="{{ lbOpen }}" hint-placeholder-val="{{ false }}">
-    <div onClick="{{ lbClose }}" role="dialog" aria-modal="true" style="position:fixed; inset:0; z-index:60; background:rgba(20,13,9,.92); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; padding:clamp(16px,3vw,48px); animation:fadeIn .28s var(--ease-out) both; cursor:zoom-out;">
+    <div onClick="{{ lbClose }}" role="dialog" aria-modal="true" style="position:fixed; inset:0; z-index:60; background:rgba(8,6,4,.94); display:flex; flex-direction:column; align-items:center; justify-content:center; gap:14px; padding:clamp(16px,3vw,48px); animation:fadeIn .28s var(--ease-out) both; cursor:zoom-out;">
       <sc-if value="{{ lbIsVideo }}" hint-placeholder-val="{{ false }}">
         <div onClick="{{ lbStop }}" style="width:min(100%,1100px); aspect-ratio:16/9; border-radius:8px; overflow:hidden; background:#000; animation:pop .32s var(--ease-out) both; cursor:default;">
           <iframe src="{{ lbVideoSrc }}" title="{{ lbCaption }}" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen="{{ true }}" style="width:100%; height:100%; border:0; display:block;"></iframe>
@@ -446,23 +448,23 @@
   <div style="animation:fadeIn .35s ease both;">
 
     <div id="inicio" style="padding:clamp(48px,8vw,120px) clamp(22px,4vw,60px) clamp(36px,5vw,70px); max-width:1180px;">
-      <div style="display:flex; align-items:center; gap:12px; font-size:13px; color:#6E5D51; margin-bottom:clamp(18px,2.6vw,26px); animation:rise .55s var(--ease-out) both;">
+      <div style="display:flex; align-items:center; gap:12px; font-size:13px; color:#A59486; margin-bottom:clamp(18px,2.6vw,26px); animation:rise .55s var(--ease-out) both;">
         <span style="width:36px; height:2px; background:#F79139; display:inline-block;"></span>{{ t.badge }}
       </div>
-      <p style="position:relative; display:inline-block; font-family:Fraunces, Georgia, serif; font-style:italic; font-size:clamp(22px,2.6vw,34px); line-height:1.2; margin:0 0 14px; color:#C4661A; animation:rise .6s var(--ease-out) .02s both;">
+      <p style="position:relative; display:inline-block; font-family:Fraunces, Georgia, serif; font-style:italic; font-size:clamp(22px,2.6vw,34px); line-height:1.2; margin:0 0 14px; color:#FFB06A; animation:rise .6s var(--ease-out) .02s both;">
         {{ t.greeting }}
-        <svg viewBox="0 0 220 12" preserveAspectRatio="none" style="position:absolute; left:0; right:0; bottom:-8px; width:100%; height:13px; color:#C4661A;" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 8c34-5 72-6 106-4s70 5 108 1"></path></svg>
+        <svg viewBox="0 0 220 12" preserveAspectRatio="none" style="position:absolute; left:0; right:0; bottom:-8px; width:100%; height:13px; color:#FFB06A;" fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><path d="M3 8c34-5 72-6 106-4s70 5 108 1"></path></svg>
       </p>
       <h1 style="font-family:Fraunces, Georgia, serif; font-weight:500; font-size:clamp(38px,6vw,88px); line-height:1.02; letter-spacing:-0.032em; margin:0 0 24px; max-width:20ch; text-wrap:pretty; animation:rise .65s var(--ease-out) .04s both;">{{ t.hi }}</h1>
-      <p style="font-family:Fraunces, Georgia, serif; font-weight:500; font-size:clamp(17px,1.75vw,24px); line-height:1.35; letter-spacing:-0.016em; color:#7E3B08; max-width:44ch; margin:0 0 26px; padding-left:clamp(16px,1.6vw,22px); border-left:3px solid #F79139; text-wrap:pretty; animation:rise .65s var(--ease-out) .09s both;">{{ t.heroTail }}</p>
-      <p style="font-size:clamp(16px,1.5vw,20px); line-height:1.62; color:#4C3D33; max-width:54ch; margin:0 0 28px; text-wrap:pretty; animation:rise .65s var(--ease-out) .12s both;">{{ t.lede1 }}</p>
+      <p style="font-family:Fraunces, Georgia, serif; font-weight:500; font-size:clamp(17px,1.75vw,24px); line-height:1.35; letter-spacing:-0.016em; color:#FFA95C; max-width:44ch; margin:0 0 26px; padding-left:clamp(16px,1.6vw,22px); border-left:3px solid #F79139; text-wrap:pretty; animation:rise .65s var(--ease-out) .09s both;">{{ t.heroTail }}</p>
+      <p style="font-size:clamp(16px,1.5vw,20px); line-height:1.62; color:#CDC1B4; max-width:54ch; margin:0 0 28px; text-wrap:pretty; animation:rise .65s var(--ease-out) .12s both;">{{ t.lede1 }}</p>
       <div style="display:flex; flex-wrap:wrap; gap:11px; animation:rise .65s var(--ease-out) .2s both;">
-        <a href="#proyectos" onClick="{{ goWorkSection }}" style="display:inline-flex; align-items:center; gap:10px; font-size:14.5px; background:#2A1B13; color:#F6F1EA; padding:14px 24px; border-radius:999px; transition:background-color .4s var(--ease-out), transform .4s var(--ease-out);" style-hover="background:#C4661A; transform:translateY(-2px);">{{ t.ctaWork }} <span data-arrow="">→</span></a>
-        <a href="mailto:comunicsocial0@gmail.com" style="display:inline-flex; align-items:center; gap:10px; font-size:14.5px; border:1px solid rgba(42,27,19,.25); padding:14px 24px; border-radius:999px; transition:border-color .4s var(--ease-out), color .4s var(--ease-out), transform .4s var(--ease-out);" style-hover="border-color:#C4661A; color:#C4661A; transform:translateY(-2px);">{{ t.ctaContact }}</a>
+        <a href="#proyectos" onClick="{{ goWorkSection }}" style="display:inline-flex; align-items:center; gap:10px; font-size:14.5px; background:#F1E9E0; color:#15120E; padding:14px 24px; border-radius:999px; transition:background-color .4s var(--ease-out), transform .4s var(--ease-out);" style-hover="background:#FFB06A; transform:translateY(-2px);">{{ t.ctaWork }} <span data-arrow="">→</span></a>
+        <a href="mailto:comunicsocial0@gmail.com" style="display:inline-flex; align-items:center; gap:10px; font-size:14.5px; border:1px solid rgba(255,255,255,.24); padding:14px 24px; border-radius:999px; transition:border-color .4s var(--ease-out), color .4s var(--ease-out), transform .4s var(--ease-out);" style-hover="border-color:#FFB06A; color:#FFB06A; transform:translateY(-2px);">{{ t.ctaContact }}</a>
       </div>
     </div>
 
-    <div data-dark="" style="background:#2A1B13; color:#F7EFE7; padding:clamp(30px,4vw,56px) clamp(22px,4vw,60px);">
+    <div data-dark="" style="background:#241710; color:#F7EFE7; padding:clamp(30px,4vw,56px) clamp(22px,4vw,60px);">
       <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(190px,1fr)); gap:clamp(20px,3vw,44px);">
         <sc-for list="{{ stats }}" as="s" hint-placeholder-count="4">
           <div data-reveal="" style="animation-delay:{{ s.delay }};">
@@ -475,42 +477,42 @@
 
     <div style="padding:clamp(34px,4.6vw,64px) clamp(22px,4vw,60px);">
       <div style="display:flex; align-items:center; gap:14px; margin-bottom:clamp(22px,3vw,32px);">
-        <svg viewBox="0 0 24 24" style="width:15px; height:15px; color:#A85410; flex:none;" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M4.5 7l15 10M19.5 7l-15 10"></path></svg>
-        <span style="font-size:12.5px; letter-spacing:.1em; text-transform:uppercase; color:#6E5D51;">{{ t.methodKicker }}</span>
+        <svg viewBox="0 0 24 24" style="width:15px; height:15px; color:#FF9E52; flex:none;" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v18M4.5 7l15 10M19.5 7l-15 10"></path></svg>
+        <span style="font-size:12.5px; letter-spacing:.1em; text-transform:uppercase; color:#A59486;">{{ t.methodKicker }}</span>
         
       </div>
       <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(250px,1fr)); gap:clamp(20px,3vw,44px);">
         <div data-reveal="">
-          <div style="width:44px; height:44px; border:1.5px solid #F79139; border-radius:12px; display:flex; align-items:center; justify-content:center; color:#A85410; margin-bottom:15px; background:#FEF0E0;">
+          <div style="width:44px; height:44px; border:1.5px solid #F79139; border-radius:12px; display:flex; align-items:center; justify-content:center; color:#FF9E52; margin-bottom:15px; background:#33240F;">
             <svg viewBox="0 0 32 32" style="width:22px; height:22px;" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><circle cx="16" cy="16" r="11"></circle><circle cx="16" cy="16" r="4.5"></circle><path d="M16 5V2M16 30v-3M5 16H2M30 16h-3"></path></svg>
           </div>
           <h3 style="font-family:Fraunces, Georgia, serif; font-weight:500; font-size:21px; margin:0 0 9px; letter-spacing:-0.015em;">{{ m1.title }}</h3>
-          <p style="font-size:14.5px; color:#4C3D33; margin:0; text-wrap:pretty;">{{ m1.body }}</p>
+          <p style="font-size:14.5px; color:#CDC1B4; margin:0; text-wrap:pretty;">{{ m1.body }}</p>
         </div>
         <div data-reveal="" style="animation-delay:.08s;">
-          <div style="width:44px; height:44px; border:1.5px solid #F79139; border-radius:12px; display:flex; align-items:center; justify-content:center; color:#A85410; margin-bottom:15px; background:#FEF0E0;">
+          <div style="width:44px; height:44px; border:1.5px solid #F79139; border-radius:12px; display:flex; align-items:center; justify-content:center; color:#FF9E52; margin-bottom:15px; background:#33240F;">
             <svg viewBox="0 0 32 32" style="width:22px; height:22px;" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="15" height="15" rx="3"></rect><rect x="9" y="11" width="15" height="15" rx="3"></rect><path d="M22 5h6v6"></path></svg>
           </div>
           <h3 style="font-family:Fraunces, Georgia, serif; font-weight:500; font-size:21px; margin:0 0 9px; letter-spacing:-0.015em;">{{ m2.title }}</h3>
-          <p style="font-size:14.5px; color:#4C3D33; margin:0; text-wrap:pretty;">{{ m2.body }}</p>
+          <p style="font-size:14.5px; color:#CDC1B4; margin:0; text-wrap:pretty;">{{ m2.body }}</p>
         </div>
         <div data-reveal="" style="animation-delay:.16s;">
-          <div style="width:44px; height:44px; border:1.5px solid #F79139; border-radius:12px; display:flex; align-items:center; justify-content:center; color:#A85410; margin-bottom:15px; background:#FEF0E0;">
+          <div style="width:44px; height:44px; border:1.5px solid #F79139; border-radius:12px; display:flex; align-items:center; justify-content:center; color:#FF9E52; margin-bottom:15px; background:#33240F;">
             <svg viewBox="0 0 32 32" style="width:22px; height:22px;" fill="none" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 26V6M4 26h24"></path><path d="M9 21l6-8 5 5 7-10"></path><circle cx="15" cy="13" r="1.6"></circle><circle cx="20" cy="18" r="1.6"></circle></svg>
           </div>
           <h3 style="font-family:Fraunces, Georgia, serif; font-weight:500; font-size:21px; margin:0 0 9px; letter-spacing:-0.015em;">{{ m3.title }}</h3>
-          <p style="font-size:14.5px; color:#4C3D33; margin:0; text-wrap:pretty;">{{ m3.body }}</p>
+          <p style="font-size:14.5px; color:#CDC1B4; margin:0; text-wrap:pretty;">{{ m3.body }}</p>
         </div>
       </div>
     </div>
 
-    <div id="proyectos" role="region" aria-labelledby="h-proyectos" style="background:#FBF7F3; color:#2A1B13; padding:clamp(34px,4.6vw,70px) clamp(22px,4vw,60px) clamp(44px,6vw,88px);">
+    <div id="proyectos" role="region" aria-labelledby="h-proyectos" style="background:#191510; color:#F1E9E0; padding:clamp(34px,4.6vw,70px) clamp(22px,4vw,60px) clamp(44px,6vw,88px);">
       <div style="margin-bottom:clamp(22px,3vw,34px);">
         <h2 id="h-proyectos" style="font-family:Fraunces, Georgia, serif; font-weight:500; font-size:clamp(30px,3.6vw,48px); letter-spacing:-0.028em; margin:0;">{{ t.workTitle }}</h2>
       </div>
       <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(min(340px,100%),1fr)); gap:clamp(14px,1.8vw,20px);">
         <sc-for list="{{ cases }}" as="c" hint-placeholder-count="8">
-          <a href="{{ c.href }}" onClick="{{ c.open }}" class="ptile" data-reveal="" style="position:relative; display:block; min-height:clamp(330px,32vw,400px); border-radius:8px; overflow:hidden; background:#A85410; color:#fff; animation-delay:{{ c.delay }};">
+          <a href="{{ c.href }}" onClick="{{ c.open }}" class="ptile" data-reveal="" style="position:relative; display:block; min-height:clamp(330px,32vw,400px); border-radius:8px; overflow:hidden; background:#FF9E52; color:#fff; animation-delay:{{ c.delay }};">
             <sc-if value="{{ c.hasImg }}" hint-placeholder-val="{{ false }}">
               <span class="pbg" role="img" aria-label="{{ c.imgAlt }}" style="position:absolute; inset:0; display:block; background-image:{{ c.imgCss }}; background-size:cover; background-position:{{ c.imgPos }};"></span>
             </sc-if>
@@ -520,7 +522,7 @@
               </span>
             </sc-if>
             <sc-if value="{{ c.isChat }}" hint-placeholder-val="{{ false }}">
-              <span class="pbg" style="position:absolute; inset:0; display:block; background:linear-gradient(155deg,#38271D,#241710);"><span style="position:absolute; left:0; right:0; top:0; height:46%; display:flex; flex-direction:column; justify-content:center; gap:7px; padding:0 24px; overflow:hidden;">
+              <span class="pbg" style="position:absolute; inset:0; display:block; background:linear-gradient(155deg,#EDE4DA,#241710);"><span style="position:absolute; left:0; right:0; top:0; height:46%; display:flex; flex-direction:column; justify-content:center; gap:7px; padding:0 24px; overflow:hidden;">
                 <span style="align-self:flex-end; max-width:76%; background:#7C8720; border-radius:12px 12px 3px 12px; padding:8px 12px; font-size:12px; line-height:1.45; color:#fff;">¡Hola! 👋 Soy Carola</span>
                 <span style="align-self:flex-start; max-width:70%; background:rgba(242,235,228,.14); border:1px solid rgba(242,235,228,.2); border-radius:12px 12px 12px 3px; padding:8px 12px; font-size:12px; color:#F7EFE7;">2</span>
                 <span style="align-self:flex-end; display:flex; gap:4px; background:#7C8720; border-radius:999px; padding:8px 11px;">
@@ -533,7 +535,7 @@
             </sc-if>
             <span class="pveil" style="position:absolute; inset:0; display:block; opacity:.8; background:linear-gradient(180deg, rgba(126,59,8,.5) 0%, rgba(150,70,12,.7) 46%, rgba(64,32,8,.92) 100%); mix-blend-mode:multiply;"></span>
             <span style="position:relative; display:flex; flex-direction:column; height:100%; min-height:inherit; padding:clamp(20px,2.4vw,28px); box-sizing:border-box;">
-              <span style="display:flex; flex-wrap:wrap; align-items:center; gap:10px; font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:#FBD9AE;">
+              <span style="display:flex; flex-wrap:wrap; align-items:center; gap:10px; font-size:12px; letter-spacing:.1em; text-transform:uppercase; color:rgba(255,255,255,.9);">
                 <span>{{ c.n }}</span>
                 <span style="width:16px; height:1px; background:rgba(255,217,196,.7); display:inline-block;"></span>
                 {{ c.client }}
@@ -542,11 +544,11 @@
                 <span style="display:block; font-family:Fraunces, Georgia, serif; font-weight:500; font-size:clamp(24px,2.7vw,33px); line-height:1.1; letter-spacing:-0.028em; color:#fff; max-width:22ch; text-wrap:pretty;">{{ c.title }}</span>
                 <span style="display:flex; flex-wrap:wrap; gap:6px; margin-top:14px;">
                   <sc-for list="{{ c.tags }}" as="tg" hint-placeholder-count="3">
-                    <span style="font-size:11.5px; color:#F7E2C6; border:1px solid rgba(255,255,255,.32); border-radius:999px; padding:4px 10px;">{{ tg }}</span>
+                    <span style="font-size:11.5px; color:#fff; border:1px solid rgba(255,255,255,.42); border-radius:999px; padding:4px 10px;">{{ tg }}</span>
                   </sc-for>
                 </span>
                 <span style="display:flex; flex-wrap:wrap; align-items:baseline; justify-content:space-between; gap:12px; margin-top:16px; padding-top:15px; border-top:1px solid rgba(255,255,255,.3);">
-                  <span style="font-size:14px; color:#FBD9AE; text-wrap:pretty;">{{ c.headline }}</span>
+                  <span style="font-size:14px; color:rgba(255,255,255,.92); text-wrap:pretty;">{{ c.headline }}</span>
                   <span class="par" style="font-size:16px; color:#fff; flex:none;">→</span>
                 </span>
               </span>
@@ -556,21 +558,21 @@
       </div>
 
       <div data-reveal="" style="margin-top:clamp(14px,1.8vw,20px);">
-        <button type="button" onClick="{{ toggleOthers }}" aria-expanded="{{ othersExpanded }}" aria-controls="otros-hitos" style="width:100%; font-family:inherit; text-align:left; cursor:pointer; display:flex; flex-wrap:wrap; align-items:center; gap:16px; background:#F3EDE4; color:#2A1B13; border:1px solid rgba(42,27,19,.16); border-radius:8px; padding:clamp(18px,2.2vw,24px) clamp(20px,2.4vw,28px); transition:background-color .35s var(--ease-out), border-color .35s var(--ease-out);" style-hover="background:#EFE7DB; border-color:rgba(168,84,16,.45);">
+        <button type="button" onClick="{{ toggleOthers }}" aria-expanded="{{ othersExpanded }}" aria-controls="otros-hitos" style="width:100%; font-family:inherit; text-align:left; cursor:pointer; display:flex; flex-wrap:wrap; align-items:center; gap:16px; background:#1F1B15; color:#F1E9E0; border:1px solid rgba(255,255,255,.15); border-radius:8px; padding:clamp(18px,2.2vw,24px) clamp(20px,2.4vw,28px); transition:background-color .35s var(--ease-out), border-color .35s var(--ease-out);" style-hover="background:#221D17; border-color:rgba(255,158,82,.5);">
           <span style="flex:1 1 260px; min-width:0;">
             <span style="display:block; font-family:Fraunces, Georgia, serif; font-weight:500; font-size:clamp(21px,2.2vw,28px); line-height:1.15; letter-spacing:-0.024em;">{{ t.otherTitle }}</span>
-            <span style="display:block; font-size:13.5px; color:#7E3B08; margin-top:6px;">{{ t.otherSub }}</span>
+            <span style="display:block; font-size:13.5px; color:#FFA95C; margin-top:6px;">{{ t.otherSub }}</span>
           </span>
-          <span aria-hidden="true" style="flex:none; width:34px; height:34px; border-radius:50%; border:1px solid rgba(42,27,19,.24); display:flex; align-items:center; justify-content:center; font-size:13px; color:#7E3B08; transform:{{ othersChevron }}; transition:transform .38s var(--ease-out);">▾</span>
+          <span aria-hidden="true" style="flex:none; width:34px; height:34px; border-radius:50%; border:1px solid rgba(255,255,255,.23); display:flex; align-items:center; justify-content:center; font-size:13px; color:#FFA95C; transform:{{ othersChevron }}; transition:transform .38s var(--ease-out);">▾</span>
         </button>
         <div id="otros-hitos" style="overflow:hidden; max-height:{{ othersHeight }}; opacity:{{ othersOpacity }}; transition:max-height .45s var(--ease-out), opacity .35s var(--ease-out);">
           <div style="display:grid; gap:10px; padding-top:10px;">
             <sc-for list="{{ secondaryCases }}" as="s2" hint-placeholder-count="2">
-              <a href="{{ s2.href }}" onClick="{{ s2.open }}" tabIndex="{{ othersTabIndex }}" style="display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 16px; background:#FEFBF6; border:1px solid rgba(42,27,19,.13); border-radius:7px; padding:16px clamp(18px,2.2vw,26px); transition:border-color .35s var(--ease-out), background-color .35s var(--ease-out);" style-hover="border-color:rgba(168,84,16,.5); background:#F9F2E7;">
-                <span style="flex:1 1 240px; min-width:0; font-family:Fraunces, Georgia, serif; font-weight:500; font-size:clamp(17px,1.7vw,21px); line-height:1.25; letter-spacing:-0.018em; color:#2A1B13; text-wrap:pretty;">{{ s2.title }}</span>
-                <span style="font-size:12.5px; color:#6E5D51;">{{ s2.client }}</span>
-                <span style="font-size:12.5px; color:#A85410;">{{ s2.year }}</span>
-                <span aria-hidden="true" style="font-size:15px; color:#A85410;">→</span>
+              <a href="{{ s2.href }}" onClick="{{ s2.open }}" tabIndex="{{ othersTabIndex }}" style="display:flex; flex-wrap:wrap; align-items:baseline; gap:6px 16px; background:#221D17; border:1px solid rgba(255,255,255,.12); border-radius:7px; padding:16px clamp(18px,2.2vw,26px); transition:border-color .35s var(--ease-out), background-color .35s var(--ease-out);" style-hover="border-color:rgba(255,158,82,.55); background:#2A241C;">
+                <span style="flex:1 1 240px; min-width:0; font-family:Fraunces, Georgia, serif; font-weight:500; font-size:clamp(17px,1.7vw,21px); line-height:1.25; letter-spacing:-0.018em; color:#F1E9E0; text-wrap:pretty;">{{ s2.title }}</span>
+                <span style="font-size:12.5px; color:#A59486;">{{ s2.client }}</span>
+                <span style="font-size:12.5px; color:#FF9E52;">{{ s2.year }}</span>
+                <span aria-hidden="true" style="font-size:15px; color:#FF9E52;">→</span>
               </a>
             </sc-for>
           </div>
@@ -578,37 +580,37 @@
       </div>
     </div>
 
-    <div id="referencias" role="region" aria-labelledby="h-referencias" style="background:#F3EDE4; padding:clamp(40px,5.4vw,84px) clamp(22px,4vw,60px);">
+    <div id="referencias" role="region" aria-labelledby="h-referencias" style="background:#1F1B15; padding:clamp(40px,5.4vw,84px) clamp(22px,4vw,60px);">
       <div style="max-width:1000px;">
         <h2 id="h-referencias" data-reveal="" style="font-family:Fraunces, Georgia, serif; font-weight:500; font-size:clamp(26px,3.2vw,42px); line-height:1.12; letter-spacing:-0.028em; margin:0 0 clamp(26px,3.4vw,40px); max-width:26ch; text-wrap:pretty;">{{ t.refsTitle }}</h2>
         <div data-reveal="" style="display:flex; flex-wrap:wrap; align-items:center; gap:18px 26px;">
           <span style="position:relative; width:74px; height:74px; flex:none; display:block;">
-            <span style="position:absolute; inset:0; border-radius:50%; border:2px solid rgba(42,27,19,.12); display:block;"></span>
-            <svg key="{{ refKey }}" viewBox="0 0 74 74" style="position:absolute; inset:0; width:100%; height:100%; transform:rotate(-90deg); overflow:visible;"><circle cx="37" cy="37" r="35" fill="none" stroke="#A85410" stroke-width="2" stroke-linecap="round" stroke-dasharray="220" style="animation:reffill 12s linear infinite;"></circle></svg>
-            <span style="position:absolute; inset:5px; border-radius:50%; overflow:hidden; background:#E6DFD3; background-image:{{ ref.photoCss }}; background-size:cover; background-position:50% 22%; display:flex; align-items:center; justify-content:center; font-family:Fraunces, Georgia, serif; font-size:22px; color:#7E3B08;">{{ ref.initials }}</span>
+            <span style="position:absolute; inset:0; border-radius:50%; border:2px solid rgba(255,255,255,.11); display:block;"></span>
+            <svg key="{{ refKey }}" viewBox="0 0 74 74" style="position:absolute; inset:0; width:100%; height:100%; transform:rotate(-90deg); overflow:visible;"><circle cx="37" cy="37" r="35" fill="none" stroke="#FF9E52" stroke-width="2" stroke-linecap="round" stroke-dasharray="220" style="animation:reffill 12s linear infinite;"></circle></svg>
+            <span style="position:absolute; inset:5px; border-radius:50%; overflow:hidden; background:#2A251E; background-image:{{ ref.photoCss }}; background-size:cover; background-position:50% 22%; display:flex; align-items:center; justify-content:center; font-family:Fraunces, Georgia, serif; font-size:22px; color:#FFA95C;">{{ ref.initials }}</span>
           </span>
           <div style="flex:1 1 240px; min-width:0;">
-            <p style="font-size:14px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:#2A1B13; margin:0;">{{ ref.name }}</p>
-            <p style="font-size:14.5px; color:#6E5D51; margin:5px 0 0;">{{ ref.role }}</p>
+            <p style="font-size:14px; font-weight:600; letter-spacing:.08em; text-transform:uppercase; color:#F1E9E0; margin:0;">{{ ref.name }}</p>
+            <p style="font-size:14.5px; color:#A59486; margin:5px 0 0;">{{ ref.role }}</p>
             <sc-if value="{{ ref.hasLinkedin }}" hint-placeholder-val="{{ false }}">
-              <a href="{{ ref.linkedin }}" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:6px; font-size:13px; color:#A85410; margin-top:7px; border-bottom:1px solid rgba(168,84,16,.35); padding-bottom:1px;" style-hover="border-bottom-color:#A85410;">LinkedIn<span aria-hidden="true">↗</span></a>
+              <a href="{{ ref.linkedin }}" target="_blank" rel="noopener noreferrer" style="display:inline-flex; align-items:center; gap:6px; font-size:13px; color:#FF9E52; margin-top:7px; border-bottom:1px solid rgba(255,158,82,.4); padding-bottom:1px;" style-hover="border-bottom-color:#FF9E52;">LinkedIn<span aria-hidden="true">↗</span></a>
             </sc-if>
           </div>
           <div style="display:flex; align-items:center; gap:16px; flex:none;">
-            <button type="button" onClick="{{ refPrev }}" aria-label="Anterior" style="width:38px; height:38px; border-radius:50%; border:1px solid rgba(42,27,19,.22); background:transparent; color:#2A1B13; font-size:16px; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:border-color .3s var(--ease-out), background-color .3s var(--ease-out);" style-hover="border-color:#A85410; background:#fff;">←</button>
-            <span style="font-size:13.5px; letter-spacing:.06em; color:#6E5D51; font-variant-numeric:tabular-nums;"><span style="color:#2A1B13; font-weight:600;">{{ refIndex }}</span> / {{ refTotal }}</span>
-            <button type="button" onClick="{{ refNext }}" aria-label="Siguiente" style="width:38px; height:38px; border-radius:50%; border:1px solid rgba(42,27,19,.22); background:transparent; color:#2A1B13; font-size:16px; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:border-color .3s var(--ease-out), background-color .3s var(--ease-out);" style-hover="border-color:#A85410; background:#fff;">→</button>
+            <button type="button" onClick="{{ refPrev }}" aria-label="Anterior" style="width:38px; height:38px; border-radius:50%; border:1px solid rgba(255,255,255,.21); background:transparent; color:#F1E9E0; font-size:16px; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:border-color .3s var(--ease-out), background-color .3s var(--ease-out);" style-hover="border-color:#FF9E52; background:#fff;">←</button>
+            <span style="font-size:13.5px; letter-spacing:.06em; color:#A59486; font-variant-numeric:tabular-nums;"><span style="color:#F1E9E0; font-weight:600;">{{ refIndex }}</span> / {{ refTotal }}</span>
+            <button type="button" onClick="{{ refNext }}" aria-label="Siguiente" style="width:38px; height:38px; border-radius:50%; border:1px solid rgba(255,255,255,.21); background:transparent; color:#F1E9E0; font-size:16px; cursor:pointer; display:flex; align-items:center; justify-content:center; transition:border-color .3s var(--ease-out), background-color .3s var(--ease-out);" style-hover="border-color:#FF9E52; background:#fff;">→</button>
           </div>
         </div>
         <div key="{{ refKey }}" style="margin:clamp(20px,2.4vw,28px) 0 0; max-width:62ch; animation:rise .5s var(--ease-out) both;">
-          <p style="font-size:clamp(15.5px,1.35vw,18px); line-height:1.62; color:#3F332B; margin:0;">“{{ ref.text }}”</p>
+          <p style="font-size:clamp(15.5px,1.35vw,18px); line-height:1.62; color:#CDC1B4; margin:0;">“{{ ref.text }}”</p>
           <sc-if value="{{ ref.expanded }}" hint-placeholder-val="{{ false }}">
             <sc-for list="{{ ref.moreParagraphs }}" as="para" hint-placeholder-count="2">
-              <p style="font-size:clamp(15.5px,1.35vw,18px); line-height:1.62; color:#3F332B; margin:14px 0 0;">{{ para.text }}</p>
+              <p style="font-size:clamp(15.5px,1.35vw,18px); line-height:1.62; color:#CDC1B4; margin:14px 0 0;">{{ para.text }}</p>
             </sc-for>
           </sc-if>
           <sc-if value="{{ ref.hasMore }}" hint-placeholder-val="{{ false }}">
-            <button type="button" onClick="{{ refToggle }}" style="margin-top:14px; font-family:inherit; font-size:13.5px; letter-spacing:.04em; color:#A85410; background:transparent; border:0; border-bottom:1px solid rgba(168,84,16,.45); padding:0 0 2px; cursor:pointer;">{{ ref.moreLabel }}</button>
+            <button type="button" onClick="{{ refToggle }}" style="margin-top:14px; font-family:inherit; font-size:13.5px; letter-spacing:.04em; color:#FF9E52; background:transparent; border:0; border-bottom:1px solid rgba(255,158,82,.5); padding:0 0 2px; cursor:pointer;">{{ ref.moreLabel }}</button>
           </sc-if>
         </div>
       </div>
@@ -618,59 +620,59 @@
       <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(290px,1fr)); gap:clamp(26px,4vw,64px); align-items:start; max-width:1240px;">
         <div data-reveal="">
           <h2 id="h-sobre" style="font-family:Fraunces, Georgia, serif; font-weight:500; font-size:clamp(30px,3.6vw,48px); letter-spacing:-0.028em; margin:0 0 20px;">{{ t.aboutTitle }}</h2>
-          <p style="font-family:Fraunces, Georgia, serif; font-size:clamp(19px,2vw,25px); line-height:1.38; color:#2A1B13; margin:0 0 18px; text-wrap:pretty;">{{ t.about1 }}</p>
-          <p style="font-size:15.5px; line-height:1.66; color:#4C3D33; margin:0 0 14px; max-width:54ch; text-wrap:pretty;">{{ t.about2 }}</p>
-          <p style="font-size:15.5px; line-height:1.66; color:#4C3D33; margin:0 0 24px; max-width:54ch; text-wrap:pretty;">{{ t.about3 }}</p>
+          <p style="font-family:Fraunces, Georgia, serif; font-size:clamp(19px,2vw,25px); line-height:1.38; color:#F1E9E0; margin:0 0 18px; text-wrap:pretty;">{{ t.about1 }}</p>
+          <p style="font-size:15.5px; line-height:1.66; color:#CDC1B4; margin:0 0 14px; max-width:54ch; text-wrap:pretty;">{{ t.about2 }}</p>
+          <p style="font-size:15.5px; line-height:1.66; color:#CDC1B4; margin:0 0 24px; max-width:54ch; text-wrap:pretty;">{{ t.about3 }}</p>
           <div style="display:flex; flex-wrap:wrap; gap:8px;">
             <sc-for list="{{ skills }}" as="sk" hint-placeholder-count="14">
-              <span style="font-size:13px; border:1px solid rgba(42,27,19,.18); border-radius:999px; padding:7px 14px; color:#4C3D33; transition:background-color .4s var(--ease-out), color .4s var(--ease-out), border-color .4s var(--ease-out);" style-hover="background:#C4661A; color:#FEF6EA; border-color:#C4661A;">{{ sk }}</span>
+              <span style="font-size:13px; border:1px solid rgba(255,255,255,.17); border-radius:999px; padding:7px 14px; color:#CDC1B4; transition:background-color .4s var(--ease-out), color .4s var(--ease-out), border-color .4s var(--ease-out);" style-hover="background:#FFB06A; color:#2E2418; border-color:#FFB06A;">{{ sk }}</span>
             </sc-for>
           </div>
         </div>
         <figure data-reveal="" style="margin:0; justify-self:end; width:100%; max-width:400px;">
-          <div style="position:relative; overflow:hidden; border-radius:6px; background:#e6e1d7; aspect-ratio:4/5;">
+          <div style="position:relative; overflow:hidden; border-radius:6px; background:#2A251E; aspect-ratio:4/5;">
             <img src="assets/alejandra-retrato-2026.jpg" alt="Retrato de Alejandra García Gómez, estratega de contenido y marca B2B" width="1024" height="1280" fetchpriority="high" style="position:absolute; inset:0; width:100%; height:100%; object-fit:cover; object-position:50% 20%; filter:saturate(.94);">
           </div>
-          <figcaption style="font-size:13px; color:#6E5D51; margin-top:11px;">{{ t.photoTag }}</figcaption>
+          <figcaption style="font-size:13px; color:#A59486; margin-top:11px;">{{ t.photoTag }}</figcaption>
         </figure>
       </div>
     </div>
 
-    <div id="trayectoria" role="region" aria-labelledby="h-trayectoria" style="padding:clamp(34px,4.6vw,70px) clamp(22px,4vw,60px); border-top:1px solid rgba(42,27,19,.14);">
+    <div id="trayectoria" role="region" aria-labelledby="h-trayectoria" style="padding:clamp(34px,4.6vw,70px) clamp(22px,4vw,60px); border-top:1px solid rgba(255,255,255,.13);">
       <h2 id="h-trayectoria" style="font-family:Fraunces, Georgia, serif; font-weight:500; font-size:clamp(30px,3.6vw,48px); letter-spacing:-0.028em; margin:0 0 7px;">{{ t.pathTitle }}</h2>
-      <p style="font-size:14px; color:#6E5D51; margin:0 0 clamp(22px,3vw,34px);">{{ t.pathNote }}</p>
+      <p style="font-size:14px; color:#A59486; margin:0 0 clamp(22px,3vw,34px);">{{ t.pathNote }}</p>
       <div style="max-width:1120px;">
         <sc-for list="{{ jobs }}" as="j" hint-placeholder-count="5">
           <div data-reveal="" data-stack="" style="display:grid; grid-template-columns:minmax(0,200px) minmax(0,1fr); gap:clamp(14px,3vw,42px); padding:20px 0; border-top:1px solid rgba(247,145,57,.35); animation-delay:{{ j.delay }};">
             <div>
               <div style="font-size:13.5px; font-weight:600;">{{ j.dates }}</div>
-              <div style="font-size:13px; color:#6E5D51; margin-top:5px;">{{ j.place }}</div>
+              <div style="font-size:13px; color:#A59486; margin-top:5px;">{{ j.place }}</div>
             </div>
             <div>
               <div style="font-family:Fraunces, Georgia, serif; font-weight:500; font-size:clamp(19px,2vw,25px); line-height:1.18; letter-spacing:-0.018em; text-wrap:pretty; overflow-wrap:break-word;">{{ j.role }}</div>
-              <div style="font-size:13.5px; color:#A85410; margin-top:5px; text-decoration:underline; text-underline-offset:3px; text-decoration-thickness:1px;">{{ j.company }}</div>
-              <p style="font-size:15px; color:#4C3D33; margin:10px 0 0; max-width:66ch; text-wrap:pretty;">{{ j.note }}</p>
+              <div style="font-size:13.5px; color:#FF9E52; margin-top:5px; text-decoration:underline; text-underline-offset:3px; text-decoration-thickness:1px;">{{ j.company }}</div>
+              <p style="font-size:15px; color:#CDC1B4; margin:10px 0 0; max-width:66ch; text-wrap:pretty;">{{ j.note }}</p>
             </div>
           </div>
         </sc-for>
       </div>
     </div>
 
-    <div id="formacion" role="region" aria-labelledby="h-formacion" style="padding:clamp(34px,4.6vw,70px) clamp(22px,4vw,60px); border-top:1px solid rgba(42,27,19,.14);">
+    <div id="formacion" role="region" aria-labelledby="h-formacion" style="padding:clamp(34px,4.6vw,70px) clamp(22px,4vw,60px); border-top:1px solid rgba(255,255,255,.13);">
       <h2 id="h-formacion" style="font-family:Fraunces, Georgia, serif; font-weight:500; font-size:clamp(30px,3.6vw,48px); letter-spacing:-0.028em; margin:0 0 7px;">{{ t.eduTitle }}</h2>
-      <p style="font-size:14px; color:#6E5D51; margin:0 0 clamp(22px,3vw,34px);">{{ t.eduLede }}</p>
+      <p style="font-size:14px; color:#A59486; margin:0 0 clamp(22px,3vw,34px);">{{ t.eduLede }}</p>
       <div style="display:grid; grid-template-columns:repeat(auto-fill,minmax(258px,1fr)); gap:clamp(14px,2.2vw,24px); max-width:1240px;">
         <sc-for list="{{ certs }}" as="ct" hint-placeholder-count="9">
-          <div data-lift="" data-reveal="" style="background:#FEFBF6; border:1px solid rgba(42,27,19,.13); border-left:2px solid rgba(247,145,57,.55); border-radius:6px; padding:17px 19px; animation-delay:{{ ct.delay }};">
+          <div data-lift="" data-reveal="" style="background:#221D17; border:1px solid rgba(255,255,255,.12); border-left:2px solid rgba(247,145,57,.55); border-radius:6px; padding:17px 19px; animation-delay:{{ ct.delay }};">
             <div style="font-size:15px; line-height:1.44; text-wrap:pretty;">{{ ct.name }}</div>
-            <div style="font-size:13px; color:#6E5D51; margin-top:10px;">{{ ct.org }}</div>
-            <div style="font-size:13px; color:#A85410; margin-top:3px;">{{ ct.date }}</div>
+            <div style="font-size:13px; color:#A59486; margin-top:10px;">{{ ct.org }}</div>
+            <div style="font-size:13px; color:#FF9E52; margin-top:3px;">{{ ct.date }}</div>
           </div>
         </sc-for>
       </div>
     </div>
 
-    <div id="contacto" role="region" aria-labelledby="h-contacto" data-dark="" style="background:#2A1B13; color:#F7EFE7; padding:clamp(44px,6vw,100px) clamp(22px,4vw,60px);">
+    <div id="contacto" role="region" aria-labelledby="h-contacto" data-dark="" style="background:#241710; color:#F7EFE7; padding:clamp(44px,6vw,100px) clamp(22px,4vw,60px);">
       <p style="font-size:12.5px; letter-spacing:.1em; text-transform:uppercase; color:#FFB86B; margin:0 0 20px;">{{ t.contactKicker }}</p>
       <h2 id="h-contacto" style="font-family:Fraunces, Georgia, serif; font-weight:500; font-size:clamp(32px,4.6vw,62px); line-height:1.06; letter-spacing:-0.032em; margin:0 0 22px; max-width:24ch; text-wrap:pretty;">{{ t.contactTitle }}</h2>
       <p style="font-size:16.5px; line-height:1.64; color:#CBB5A3; max-width:56ch; margin:0 0 clamp(26px,3.4vw,40px); text-wrap:pretty;">{{ t.contactLede }}</p>
@@ -688,7 +690,7 @@
           <span style="font-size:13px; color:#CBB5A3;">{{ t.phoneLabel }}</span>
         </a>
       </div>
-      <a href="{{ cvHref }}" download="Alejandra-Garcia-CV.pdf" style="display:inline-flex; align-items:center; gap:10px; margin-top:clamp(24px,3.4vw,38px); font-size:14.5px; background:#F7EFE7; color:#2A1B13; padding:14px 24px; border-radius:999px; transition:background-color .4s var(--ease-out), transform .4s var(--ease-out);" style-hover="background:#FFA95C; color:#2A1B13; transform:translateY(-2px);">{{ t.ctaCv }} ↓</a>
+      <a href="{{ cvHref }}" download="Alejandra-Garcia-CV.pdf" style="display:inline-flex; align-items:center; gap:10px; margin-top:clamp(24px,3.4vw,38px); font-size:14.5px; background:#FFA95C; color:#241710; padding:14px 24px; border-radius:999px; transition:background-color .4s var(--ease-out), transform .4s var(--ease-out);" style-hover="background:#FFC38E; color:#241710; transform:translateY(-2px);">{{ t.ctaCv }} ↓</a>
     </div>
 
   </div>
@@ -697,15 +699,15 @@
   <sc-if value="{{ isCase }}" hint-placeholder-val="{{ false }}">
   <div style="animation:fadeIn .35s ease both;">
     <div style="padding:clamp(28px,4vw,58px) clamp(22px,4vw,60px) clamp(28px,3.4vw,44px); max-width:1180px;">
-      <a href="#proyectos" onClick="{{ goWorkSection }}" style="font-size:13.5px; color:#6E5D51; transition:color .4s var(--ease-out);" style-hover="color:#C4661A;">← {{ t.backLabel }}</a>
-      <div style="display:flex; flex-wrap:wrap; gap:8px 18px; margin:22px 0 14px; font-size:13px; color:#6E5D51; animation:rise .5s var(--ease-out) both;">
-        <span style="color:#A85410;">{{ current.n }}</span><span>{{ current.client }}</span><span>{{ current.year }}</span>
+      <a href="#proyectos" onClick="{{ goWorkSection }}" style="font-size:13.5px; color:#A59486; transition:color .4s var(--ease-out);" style-hover="color:#FFB06A;">← {{ t.backLabel }}</a>
+      <div style="display:flex; flex-wrap:wrap; gap:8px 18px; margin:22px 0 14px; font-size:13px; color:#A59486; animation:rise .5s var(--ease-out) both;">
+        <span style="color:#FF9E52;">{{ current.n }}</span><span>{{ current.client }}</span><span>{{ current.year }}</span>
       </div>
       <h1 style="font-family:Fraunces, Georgia, serif; font-weight:500; font-size:clamp(30px,4vw,54px); line-height:1.08; letter-spacing:-0.028em; margin:0 0 16px; max-width:24ch; text-wrap:pretty; animation:rise .6s var(--ease-out) .04s both;">{{ current.title }}</h1>
-      <p style="font-size:clamp(15.5px,1.35vw,18px); line-height:1.64; color:#4C3D33; max-width:56ch; margin:0 0 18px; text-wrap:pretty; animation:rise .6s var(--ease-out) .1s both;">{{ current.summary }}</p>
+      <p style="font-size:clamp(15.5px,1.35vw,18px); line-height:1.64; color:#CDC1B4; max-width:56ch; margin:0 0 18px; text-wrap:pretty; animation:rise .6s var(--ease-out) .1s both;">{{ current.summary }}</p>
       <div style="display:flex; flex-wrap:wrap; gap:8px; animation:rise .6s var(--ease-out) .16s both;">
         <sc-for list="{{ current.tags }}" as="tg" hint-placeholder-count="3">
-          <span style="font-size:12.5px; border:1px solid rgba(247,145,57,.55); border-radius:999px; padding:6px 13px; color:#7E3B08;">{{ tg }}</span>
+          <span style="font-size:12.5px; border:1px solid rgba(247,145,57,.55); border-radius:999px; padding:6px 13px; color:#FFA95C;">{{ tg }}</span>
         </sc-for>
       </div>
     </div>
@@ -772,32 +774,32 @@
             </div>
           </div>
         </div>
-        <p style="text-align:center; font-size:12.5px; color:#6E5D51; margin:18px 0 0;">{{ t.chatCaption }}</p>
+        <p style="text-align:center; font-size:12.5px; color:#A59486; margin:18px 0 0;">{{ t.chatCaption }}</p>
       </div>
     </sc-if>
     <sc-if value="{{ current.isScreen }}" hint-placeholder-val="{{ false }}">
-      <div style="background:#EDE7DD; padding:clamp(26px,4vw,58px) clamp(22px,4vw,60px);">
-        <div style="max-width:705px; margin:0 auto; border-radius:12px; overflow:hidden; border:1px solid rgba(42,27,19,.14); box-shadow:0 18px 44px -28px rgba(42,27,19,.45); background:#FEFBF6; animation:uncover .9s var(--ease-out) .1s both;">
-          <div style="display:flex; align-items:center; gap:9px; padding:11px 14px; border-bottom:1px solid rgba(247,145,57,.32); background:#eff0ea;">
-            <span style="display:flex; gap:5px;"><span style="width:9px; height:9px; border-radius:50%; background:#d3ccbd; display:block;"></span><span style="width:9px; height:9px; border-radius:50%; background:#d3ccbd; display:block;"></span><span style="width:9px; height:9px; border-radius:50%; background:#d3ccbd; display:block;"></span></span>
-            <span style="flex:1; font-size:12px; color:#6E5D51; background:#f7f4ec; border:1px solid rgba(42,27,19,.12); border-radius:999px; padding:4px 12px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{{ current.screenUrl }}</span>
+      <div style="background:#1D1913; padding:clamp(26px,4vw,58px) clamp(22px,4vw,60px);">
+        <div style="max-width:705px; margin:0 auto; border-radius:12px; overflow:hidden; border:1px solid rgba(255,255,255,.13); box-shadow:0 18px 44px -28px rgba(0,0,0,.7); background:#221D17; animation:uncover .9s var(--ease-out) .1s both;">
+          <div style="display:flex; align-items:center; gap:9px; padding:11px 14px; border-bottom:1px solid rgba(247,145,57,.32); background:#232019;">
+            <span style="display:flex; gap:5px;"><span style="width:9px; height:9px; border-radius:50%; background:#4A443A; display:block;"></span><span style="width:9px; height:9px; border-radius:50%; background:#4A443A; display:block;"></span><span style="width:9px; height:9px; border-radius:50%; background:#4A443A; display:block;"></span></span>
+            <span style="flex:1; font-size:12px; color:#A59486; background:#2B2620; border:1px solid rgba(255,255,255,.11); border-radius:999px; padding:4px 12px; white-space:nowrap; overflow:hidden; text-overflow:ellipsis;">{{ current.screenUrl }}</span>
           </div>
           <span style="display:block; width:100%; aspect-ratio:1757/895; background-image:{{ current.imgCss }}; background-size:cover; background-position:50% 0;"></span>
         </div>
       </div>
     </sc-if>
     <sc-if value="{{ current.heroPhoto }}" hint-placeholder-val="{{ false }}">
-      <div style="position:relative; aspect-ratio:16/6; background:#e6e1d7; overflow:hidden; animation:uncover .9s var(--ease-out) .1s both;">
+      <div style="position:relative; aspect-ratio:16/6; background:#2A251E; overflow:hidden; animation:uncover .9s var(--ease-out) .1s both;">
         <span style="position:absolute; inset:0; display:block; background-image:{{ current.imgCss }}; background-size:cover; background-position:{{ current.imgPos }};"></span>
       </div>
     </sc-if>
     <sc-if value="{{ current.isSlot }}" hint-placeholder-val="{{ true }}">
-      <div style="position:relative; aspect-ratio:16/6; background:#e6e1d7; animation:uncover .9s var(--ease-out) .1s both;">
+      <div style="position:relative; aspect-ratio:16/6; background:#2A251E; animation:uncover .9s var(--ease-out) .1s both;">
         <image-slot id="{{ current.heroSlot }}" shape="rect" placeholder="{{ t.heroSlotHint }}"></image-slot>
       </div>
     </sc-if>
 
-    <div data-dark="" style="background:#2A1B13; color:#F7EFE7; padding:clamp(26px,3.4vw,44px) clamp(22px,4vw,60px);">
+    <div data-dark="" style="background:#241710; color:#F7EFE7; padding:clamp(26px,3.4vw,44px) clamp(22px,4vw,60px);">
       <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(180px,1fr)); gap:clamp(18px,3vw,40px);">
         <sc-for list="{{ current.metrics }}" as="m" hint-placeholder-count="3">
           <div data-reveal="" style="animation-delay:{{ m.delay }};">
@@ -811,21 +813,21 @@
     <div style="padding:clamp(32px,4vw,56px) clamp(22px,4vw,60px) clamp(44px,5vw,76px); max-width:1240px;">
       <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(290px,1fr)); gap:clamp(24px,3.6vw,56px);">
         <div data-reveal="">
-          <p style="font-size:12.5px; letter-spacing:.1em; text-transform:uppercase; color:#A85410; margin:0 0 10px;">{{ t.lblChallenge }}</p>
-          <p style="font-size:16px; line-height:1.64; color:#4C3D33; margin:0 0 28px; text-wrap:pretty;">{{ current.challenge }}</p>
-          <p style="font-size:12.5px; letter-spacing:.1em; text-transform:uppercase; color:#A85410; margin:0 0 10px;">{{ t.lblRole }}</p>
-          <p style="font-size:16px; line-height:1.64; color:#4C3D33; margin:0 0 28px; text-wrap:pretty;">{{ current.roleText }}</p>
-          <p style="font-size:12.5px; letter-spacing:.1em; text-transform:uppercase; color:#A85410; margin:0 0 10px;">{{ t.lblResult }}</p>
-          <p style="font-size:16px; line-height:1.64; color:#4C3D33; margin:0; text-wrap:pretty;">{{ current.result }}</p>
+          <p style="font-size:12.5px; letter-spacing:.1em; text-transform:uppercase; color:#FF9E52; margin:0 0 10px;">{{ t.lblChallenge }}</p>
+          <p style="font-size:16px; line-height:1.64; color:#CDC1B4; margin:0 0 28px; text-wrap:pretty;">{{ current.challenge }}</p>
+          <p style="font-size:12.5px; letter-spacing:.1em; text-transform:uppercase; color:#FF9E52; margin:0 0 10px;">{{ t.lblRole }}</p>
+          <p style="font-size:16px; line-height:1.64; color:#CDC1B4; margin:0 0 28px; text-wrap:pretty;">{{ current.roleText }}</p>
+          <p style="font-size:12.5px; letter-spacing:.1em; text-transform:uppercase; color:#FF9E52; margin:0 0 10px;">{{ t.lblResult }}</p>
+          <p style="font-size:16px; line-height:1.64; color:#CDC1B4; margin:0; text-wrap:pretty;">{{ current.result }}</p>
         </div>
         <div>
-          <p style="font-size:12.5px; letter-spacing:.1em; text-transform:uppercase; color:#A85410; margin:0 0 14px;">{{ t.lblProcess }}</p>
+          <p style="font-size:12.5px; letter-spacing:.1em; text-transform:uppercase; color:#FF9E52; margin:0 0 14px;">{{ t.lblProcess }}</p>
           <sc-for list="{{ current.process }}" as="p" hint-placeholder-count="4">
             <div data-reveal="" data-stack="" style="display:grid; grid-template-columns:34px minmax(0,1fr); gap:11px; padding:15px 0; border-top:1px solid rgba(247,145,57,.35);">
-              <span style="font-size:12.5px; color:#6E5D51; padding-top:4px;">{{ p.n }}</span>
+              <span style="font-size:12.5px; color:#A59486; padding-top:4px;">{{ p.n }}</span>
               <div>
                 <div style="font-size:15.5px; font-weight:600;">{{ p.title }}</div>
-                <p style="font-size:14.5px; color:#6E5D51; margin:4px 0 0; text-wrap:pretty;">{{ p.body }}</p>
+                <p style="font-size:14.5px; color:#A59486; margin:4px 0 0; text-wrap:pretty;">{{ p.body }}</p>
               </div>
             </div>
           </sc-for>
@@ -834,29 +836,29 @@
 
       <sc-if value="{{ current.hasVideoList }}" hint-placeholder-val="{{ false }}">
         <div style="margin-top:clamp(32px,4vw,52px);">
-          <p style="font-size:12.5px; letter-spacing:.1em; text-transform:uppercase; color:#A85410; margin:0 0 16px;">{{ t.lblVideos }}</p>
+          <p style="font-size:12.5px; letter-spacing:.1em; text-transform:uppercase; color:#FF9E52; margin:0 0 16px;">{{ t.lblVideos }}</p>
           <div style="display:flex; gap:clamp(12px,1.6vw,18px); overflow-x:auto; padding-bottom:10px; scroll-snap-type:x mandatory;">
             <sc-for list="{{ current.videoList }}" as="v" hint-placeholder-count="6">
-              <button type="button" onClick="{{ v.open }}" style="flex:0 0 auto; width:240px; scroll-snap-align:start; display:block; text-align:left; padding:0; border:1px solid rgba(42,27,19,.13); border-radius:8px; overflow:hidden; background:#FEFBF6; cursor:pointer; font-family:inherit; transition:border-color .3s var(--ease-out), transform .3s var(--ease-out);" style-hover="border-color:rgba(168,84,16,.55); transform:translateY(-3px);">
+              <button type="button" onClick="{{ v.open }}" style="flex:0 0 auto; width:240px; scroll-snap-align:start; display:block; text-align:left; padding:0; border:1px solid rgba(255,255,255,.12); border-radius:8px; overflow:hidden; background:#221D17; cursor:pointer; font-family:inherit; transition:border-color .3s var(--ease-out), transform .3s var(--ease-out);" style-hover="border-color:rgba(168,84,16,.55); transform:translateY(-3px);">
                 <span style="position:relative; display:block; aspect-ratio:16/9; background:#1B1813; background-image:{{ v.thumbCss }}; background-size:cover; background-position:50% 50%;">
                   <span aria-hidden="true" style="position:absolute; inset:0; display:flex; align-items:center; justify-content:center;">
                     <span style="width:42px; height:42px; border-radius:50%; background:rgba(27,24,19,.72); color:#fff; font-size:14px; display:flex; align-items:center; justify-content:center; padding-left:3px;">▶</span>
                   </span>
                 </span>
                 <sc-if value="{{ v.hasCaption }}" hint-placeholder-val="{{ true }}">
-                  <span style="display:block; font-size:12.5px; line-height:1.45; color:#2A1B13; padding:11px 12px 13px; text-wrap:pretty;">{{ v.caption }}</span>
+                  <span style="display:block; font-size:12.5px; line-height:1.45; color:#F1E9E0; padding:11px 12px 13px; text-wrap:pretty;">{{ v.caption }}</span>
                 </sc-if>
               </button>
             </sc-for>
           </div>
-          <p style="font-size:12px; line-height:1.55; color:#6E5D51; margin:12px 0 0; max-width:80ch; text-wrap:pretty;">{{ current.videosNote }}</p>
+          <p style="font-size:12px; line-height:1.55; color:#A59486; margin:12px 0 0; max-width:80ch; text-wrap:pretty;">{{ current.videosNote }}</p>
         </div>
       </sc-if>
 
       <sc-if value="{{ current.hasVideo }}" hint-placeholder-val="{{ false }}">
         <div style="margin-top:clamp(32px,4vw,52px);">
-          <p style="font-size:12.5px; letter-spacing:.1em; text-transform:uppercase; color:#A85410; margin:0 0 16px;">{{ t.lblVideo }}</p>
-          <div data-reveal="" style="max-width:860px; aspect-ratio:16/9; border-radius:8px; overflow:hidden; border:1px solid rgba(42,27,19,.14); background:#1B1813; box-shadow:0 18px 44px -30px rgba(42,27,19,.55);">
+          <p style="font-size:12.5px; letter-spacing:.1em; text-transform:uppercase; color:#FF9E52; margin:0 0 16px;">{{ t.lblVideo }}</p>
+          <div data-reveal="" style="max-width:860px; aspect-ratio:16/9; border-radius:8px; overflow:hidden; border:1px solid rgba(255,255,255,.13); background:#1B1813; box-shadow:0 18px 44px -30px rgba(0,0,0,.75);">
             <iframe src="{{ current.videoSrc }}" title="{{ current.title }}" loading="lazy" allow="accelerometer; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowFullScreen="{{ true }}" style="width:100%; height:100%; border:0; display:block;"></iframe>
           </div>
         </div>
@@ -864,26 +866,26 @@
 
       <sc-if value="{{ current.hasGallery }}" hint-placeholder-val="{{ false }}">
         <div style="margin-top:clamp(32px,4vw,52px);">
-          <p style="font-size:12.5px; letter-spacing:.1em; text-transform:uppercase; color:#A85410; margin:0 0 16px;">{{ current.piecesLabel }}</p>
+          <p style="font-size:12.5px; letter-spacing:.1em; text-transform:uppercase; color:#FF9E52; margin:0 0 16px;">{{ current.piecesLabel }}</p>
           <div style="display:grid; grid-template-columns:repeat(auto-fit,minmax(min(180px,100%),1fr)); justify-items:stretch; gap:clamp(14px,2vw,24px); max-width:1060px;">
             <sc-for list="{{ current.gallery }}" as="g" hint-placeholder-count="4">
-              <figure data-reveal="" data-lift="" style="margin:0; box-sizing:border-box; width:100%; max-width:{{ g.maxW }}; background:#FEFBF6; border:1px solid rgba(42,27,19,.13); border-radius:8px; padding:14px 14px 0; animation-delay:{{ g.delay }};">
-                <button type="button" onClick="{{ g.open }}" aria-label="{{ g.caption }}" data-zoom="" style="display:block; width:100%; padding:0; border:0; cursor:zoom-in; overflow:hidden; border-radius:4px; background:#EDE7DD; box-shadow:0 10px 24px -18px rgba(42,27,19,.5);">
+              <figure data-reveal="" data-lift="" style="margin:0; box-sizing:border-box; width:100%; max-width:{{ g.maxW }}; background:#221D17; border:1px solid rgba(255,255,255,.12); border-radius:8px; padding:14px 14px 0; animation-delay:{{ g.delay }};">
+                <button type="button" onClick="{{ g.open }}" aria-label="{{ g.caption }}" data-zoom="" style="display:block; width:100%; padding:0; border:0; cursor:zoom-in; overflow:hidden; border-radius:4px; background:#1D1913; box-shadow:0 10px 24px -18px rgba(0,0,0,.72);">
                   <img src="{{ g.src }}" alt="{{ g.caption }}" loading="lazy" style="width:100%; height:auto; display:block;">
                 </button>
-                <figcaption style="font-size:12.5px; line-height:1.45; color:#6E5D51; padding:12px 2px 14px; text-wrap:pretty;">{{ g.caption }}</figcaption>
+                <figcaption style="font-size:12.5px; line-height:1.45; color:#A59486; padding:12px 2px 14px; text-wrap:pretty;">{{ g.caption }}</figcaption>
               </figure>
             </sc-for>
           </div>
         </div>
       </sc-if>
 
-      <div style="margin-top:clamp(32px,4vw,52px); padding-top:22px; border-top:1px solid rgba(42,27,19,.16); display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px;">
+      <div style="margin-top:clamp(32px,4vw,52px); padding-top:22px; border-top:1px solid rgba(255,255,255,.15); display:flex; flex-wrap:wrap; align-items:center; justify-content:space-between; gap:16px;">
         <div>
-          <p style="font-size:12.5px; letter-spacing:.1em; text-transform:uppercase; color:#6E5D51; margin:0 0 7px;">{{ t.nextLabel }}</p>
-          <a href="{{ next.href }}" onClick="{{ next.open }}" style="font-family:Fraunces, Georgia, serif; font-weight:500; font-size:clamp(19px,2.1vw,27px); letter-spacing:-0.02em; transition:color .4s var(--ease-out);" style-hover="color:#C4661A;">{{ next.title }} <span data-arrow="">→</span></a>
+          <p style="font-size:12.5px; letter-spacing:.1em; text-transform:uppercase; color:#A59486; margin:0 0 7px;">{{ t.nextLabel }}</p>
+          <a href="{{ next.href }}" onClick="{{ next.open }}" style="font-family:Fraunces, Georgia, serif; font-weight:500; font-size:clamp(19px,2.1vw,27px); letter-spacing:-0.02em; transition:color .4s var(--ease-out);" style-hover="color:#FFB06A;">{{ next.title }} <span data-arrow="">→</span></a>
         </div>
-        <a href="#proyectos" onClick="{{ goWorkSection }}" style="font-size:13.5px; border:1px solid rgba(42,27,19,.25); border-radius:999px; padding:11px 19px; transition:border-color .4s var(--ease-out), color .4s var(--ease-out);" style-hover="border-color:#C4661A; color:#C4661A;">{{ t.allWork }}</a>
+        <a href="#proyectos" onClick="{{ goWorkSection }}" style="font-size:13.5px; border:1px solid rgba(255,255,255,.24); border-radius:999px; padding:11px 19px; transition:border-color .4s var(--ease-out), color .4s var(--ease-out);" style-hover="border-color:#FFB06A; color:#FFB06A;">{{ t.allWork }}</a>
       </div>
     </div>
   </div>
@@ -1162,7 +1164,7 @@ class Component extends DCLogic {
         label: t[s.key], href: "#" + s.id, go: this.goSection(s.id),
         goMobile: (e) => { this.setState({ menuOpen: false }); this.goSection(s.id)(e); },
         scale: (idx < 0 && active === s.id) || (idx >= 0 && s.id === "proyectos") ? 1 : 0,
-        color: (idx < 0 && active === s.id) || (idx >= 0 && s.id === "proyectos") ? "#2A1B13" : "#6E5D51"
+        color: (idx < 0 && active === s.id) || (idx >= 0 && s.id === "proyectos") ? "#F1E9E0" : "#A59486"
       })),
       cases: list.filter(c => !c.secondary),
       secondaryCases: list.filter(c => c.secondary),
